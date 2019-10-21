@@ -1,4 +1,4 @@
-<mxfile modified="2019-10-21T07:52:57.193Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="HkA3UJP-rxDZmeR1rc7j" version="12.1.3" type="github" pages="2">
+<mxfile modified="2019-10-21T08:23:21.705Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="AV6nM6nWZ49l9U-ynwnK" version="12.1.3" type="github" pages="2">
   <diagram id="YPdFFoNSkU-BhggKH9zJ" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -104,15 +104,18 @@
     </mxGraphModel>
   </diagram>
   <diagram id="d9pKxJTiTwgIbFAn0aTv" name="Page-2">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="JYGuztTLeHIkRcILPIlH-0"/>
         <mxCell id="JYGuztTLeHIkRcILPIlH-1" parent="JYGuztTLeHIkRcILPIlH-0"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-52" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=4;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="100" y="-830" width="605" height="430" as="geometry"/>
+        </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-3" target="JYGuztTLeHIkRcILPIlH-6">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-3" value="仪器类型分类" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="320" y="240" width="120" height="60" as="geometry"/>
+          <mxGeometry x="345" y="-1150" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-6" target="JYGuztTLeHIkRcILPIlH-8">
           <mxGeometry relative="1" as="geometry"/>
@@ -121,63 +124,109 @@
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-6" value="仪器ID分类" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="220" y="350" width="120" height="60" as="geometry"/>
+          <mxGeometry x="245" y="-1040" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-8" target="JYGuztTLeHIkRcILPIlH-10">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-8" value="测量数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="150" y="450" width="120" height="60" as="geometry"/>
+          <mxGeometry x="175" y="-940" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-9" value="同类型仪器对比分析" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="459" y="340" width="120" height="80" as="geometry"/>
+          <mxGeometry x="484" y="-1050" width="120" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="JYGuztTLeHIkRcILPIlH-10" value="仪器工作数据分析" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="370" y="440" width="120" height="80" as="geometry"/>
+          <mxGeometry x="395" y="-950" width="120" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-17" value="经纬度为核心" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=22;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;fontSize=14;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="610" y="510" width="140" height="100" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.269;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-21" target="JYGuztTLeHIkRcILPIlH-35">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-18" value="污染企业" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-17">
-          <mxGeometry y="22" width="140" height="26" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-21" value="位置信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="175" y="-590" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-19" value="保护区划分" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-17">
-          <mxGeometry y="48" width="140" height="26" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-22" value="&lt;span style=&quot;white-space: normal&quot;&gt;仪器上传数据&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="154" y="-500" width="490" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-20" value="Row 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-17">
-          <mxGeometry y="74" width="140" height="26" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-23" target="JYGuztTLeHIkRcILPIlH-34">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-21" target="JYGuztTLeHIkRcILPIlH-25">
+        <mxCell id="JYGuztTLeHIkRcILPIlH-23" value="时间信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="315" y="-590" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-24" target="JYGuztTLeHIkRcILPIlH-33">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-24" target="JYGuztTLeHIkRcILPIlH-42">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-24" value="测量数据信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="465" y="-590" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-32" value="质控管理" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="205" y="-760" width="160" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-33" value="人员打卡" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-32">
+          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-34" value="采样周期，频次" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-32">
+          <mxGeometry y="52" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-35" value="在位报警" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-32">
+          <mxGeometry y="78" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-39" value="质量监测" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;fontSize=14;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="415" y="-760" width="160" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-40" value="监测区域" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-39">
+          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-41" value="监测污染物" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-39">
+          <mxGeometry y="52" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-42" value="监测指标" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-39">
+          <mxGeometry y="78" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-46" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-21" target="JYGuztTLeHIkRcILPIlH-40">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-59" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.321;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-54" target="JYGuztTLeHIkRcILPIlH-64">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="740" as="targetPoint"/>
+            <mxPoint x="245" y="-276.0256410256411" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-21" target="JYGuztTLeHIkRcILPIlH-28">
+        <mxCell id="JYGuztTLeHIkRcILPIlH-54" value="仪器类型，id" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="95" y="-322" width="90" height="53" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-60" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-55" target="JYGuztTLeHIkRcILPIlH-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="-235" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-55" value="时间窗条件" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="93" y="-254.5" width="94" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-61" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-56" target="JYGuztTLeHIkRcILPIlH-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="-192.5" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-56" value="经纬度条件" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="90" y="-204.5" width="95" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-67" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-64" target="JYGuztTLeHIkRcILPIlH-66">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-21" value="&lt;span style=&quot;white-space: normal&quot;&gt;测点管理：对于位置信息的利用&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="190" y="800" width="120" height="60" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-64" value="仪器上传的数据" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="255" y="-322" width="140" height="170" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-22" value="&lt;span style=&quot;white-space: normal&quot;&gt;仪器上传数据&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="150" y="890" width="490" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-23" target="JYGuztTLeHIkRcILPIlH-25">
+        <mxCell id="JYGuztTLeHIkRcILPIlH-71" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-66" target="JYGuztTLeHIkRcILPIlH-70">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-23" value="监测管理：对于测量数据的应用" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="320" y="800" width="120" height="60" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-66" value="&lt;span style=&quot;white-space: normal&quot;&gt;时序的仪器测量数据&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="445" y="-264.5" width="100" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JYGuztTLeHIkRcILPIlH-1" source="JYGuztTLeHIkRcILPIlH-24" target="JYGuztTLeHIkRcILPIlH-28">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-24" value="质控管理：仪器操作时间的应用" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="450" y="800" width="120" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-25" value="质量监测" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="190" y="650" width="70" height="70" as="geometry"/>
-        </mxCell>
-        <mxCell id="JYGuztTLeHIkRcILPIlH-28" value="质控管理" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
-          <mxGeometry x="484" y="650" width="70" height="70" as="geometry"/>
+        <mxCell id="JYGuztTLeHIkRcILPIlH-70" value="&lt;span style=&quot;white-space: normal&quot;&gt;赋予应用含义，然后用于显示&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="JYGuztTLeHIkRcILPIlH-1">
+          <mxGeometry x="595" y="-267" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
