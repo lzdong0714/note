@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-26T03:31:10.877Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="YkcooRkFhrFjeS_LX2VS" version="12.1.7" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2019-10-26T03:36:05.553Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="lOTOLaDNO6_IHceij_tm" version="12.1.7" type="github" pages="2">
   <diagram id="ILxC6_wEYAGkN3Qzh64Z" name="CPU和缓存">
     <mxGraphModel dx="785" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -188,7 +188,7 @@
           <mxGeometry x="224" y="760" width="75" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="YYaNBqdhBjBN7z7zkRMa-52" value="主内存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="244" y="887.5" width="40" height="20" as="geometry"/>
+          <mxGeometry x="249" y="875" width="40" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="q9u4zXfn57YhL3ntNb7U-8" value="object-1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="262.5" width="54" height="26" as="geometry"/>
@@ -282,6 +282,18 @@
         </mxCell>
         <mxCell id="q9u4zXfn57YhL3ntNb7U-32" value="Java内存模型抽象结构图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50.5" y="480" width="85" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-38" value="这一块变量读写出问题，就是并发问题" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" y="930" width="116" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-41" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="710" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-42" value="基本变量直接用：Atomic类型，基于CAS算法保证" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="718" width="100" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-43" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="800" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
