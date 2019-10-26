@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-26T03:42:17.302Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="SOTegKi4JRC4Kh48kRe2" version="12.1.7" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2019-10-26T04:00:33.695Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="7G0PG_4WfP9SUzPO3Y7s" version="12.1.7" type="github" pages="2">
   <diagram id="ILxC6_wEYAGkN3Qzh64Z" name="CPU和缓存">
     <mxGraphModel dx="785" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -286,6 +286,9 @@
         <mxCell id="q9u4zXfn57YhL3ntNb7U-38" value="这一块变量读写出问题，就是并发问题" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="215" y="930" width="116" height="30" as="geometry"/>
         </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.965;entryY=0.322;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="q9u4zXfn57YhL3ntNb7U-45" target="q9u4zXfn57YhL3ntNb7U-37">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
         <mxCell id="q9u4zXfn57YhL3ntNb7U-45" value="单例对象：保证访问对象的唯一性，其中volatile的可见性" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="557.5" y="875" width="120" height="60" as="geometry"/>
         </mxCell>
@@ -306,6 +309,27 @@
         </mxCell>
         <mxCell id="q9u4zXfn57YhL3ntNb7U-44" value="过程方法,用sychronized保证，过程只能被单线程访问" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="q9u4zXfn57YhL3ntNb7U-47">
           <mxGeometry y="15" width="116" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-50" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.952;entryY=0.275;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="q9u4zXfn57YhL3ntNb7U-41" target="q9u4zXfn57YhL3ntNb7U-37">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-51" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.965;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="q9u4zXfn57YhL3ntNb7U-44" target="q9u4zXfn57YhL3ntNb7U-37">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-53" value="对象不可变，将对象，或者属性设定为不可变的，保证使用的不被更改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="36.5" y="1045" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-54" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="189" y="1045" width="161" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-55" value="线程封闭：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="198" y="1050" width="67" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-56" value="栈堆封闭：正常的局部变量" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="199" y="1065" width="146" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="q9u4zXfn57YhL3ntNb7U-57" value="ThrealLocal: 线程封闭" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="194.5" y="1085" width="130" height="10" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
