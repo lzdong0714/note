@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-15T07:59:32.864Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="2fSfP5lGsXrf9Kz7xvMv" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-15T09:49:46.396Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="aB8mJofM0me9397lDUpa" version="12.2.6" type="github" pages="1">
   <diagram id="awLBeLxRA7o_fGoqpygC" name="测点管理">
-    <mxGraphModel dx="3327" dy="2065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2680" dy="1773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -1533,7 +1533,7 @@
           <mxGeometry x="-1070" y="-837" width="220" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="fLLy5G_wLx6JKbZzr-b4-1026" value="3" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;fillColor=#AE4132;strokeWidth=4;fontColor=#ffffff;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-1168.5" y="-793.5" width="60" height="60" as="geometry"/>
+          <mxGeometry x="-1100" y="-843.5" width="60" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="fLLy5G_wLx6JKbZzr-b4-868" value="" style="html=1;shadow=0;dashed=0;shape=partialRectangle;top=0;bottom=0;right=0;left=0;strokeColor=#dddddd;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="-815" y="567.5" width="801" height="160" as="geometry"/>
