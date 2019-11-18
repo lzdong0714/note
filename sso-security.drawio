@@ -1,11 +1,11 @@
-<mxfile host="www.draw.io" modified="2019-11-18T08:54:15.839Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="of5XN_uNCrGjCI0XmcDE" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-18T08:54:36.504Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="i7CNK-VuS7qFQjSYHpCx" version="12.2.6" type="github" pages="1">
   <diagram id="NZ1MvinwC9dphN5qzvx4" name="Page-1">
     <mxGraphModel dx="1026" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="EbfM9CHVRym8zktASDZ2-1" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;&lt;font face=&quot;等线&quot;&gt;使用&lt;/font&gt;Spring&lt;/span&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;&amp;nbsp;Security&lt;/span&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;作为系统安全管理框架，使用&lt;/span&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;OAuth2&lt;/span&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;认证、授权协议，使用&lt;/span&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;JWT&lt;/span&gt;&lt;span style=&quot;font-size: 10.5000pt&quot;&gt;&lt;font face=&quot;等线&quot;&gt;格式的访问令牌。构建&lt;/font&gt;SSO单点登录服务。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="90" width="420" height="60" as="geometry"/>
+          <mxGeometry x="40" y="90" width="400" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
