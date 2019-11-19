@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-19T01:54:27.423Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="IaOZ4uZu4T3HZt37FZw9" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-19T02:04:55.784Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="5utRPxL7fT_rjSW1KXQd" version="12.2.6" type="github" pages="1">
   <diagram id="NZ1MvinwC9dphN5qzvx4" name="Page-1">
-    <mxGraphModel dx="1026" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1208" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -29,7 +29,7 @@
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="185" width="150" height="415" as="geometry"/>
+          <mxGeometry x="100" y="187.5" width="150" height="415" as="geometry"/>
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-18" value="Client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="145" y="200" width="40" height="20" as="geometry"/>
@@ -68,10 +68,10 @@
           <mxGeometry x="610" y="400" width="120" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-34" value="海纳云资源" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="530" width="100" height="20" as="geometry"/>
+          <mxGeometry x="575" y="520" width="100" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-35" value="微信，QQ资源？？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="615" y="560" width="120" height="20" as="geometry"/>
+          <mxGeometry x="610" y="580" width="120" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-36" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="EbfM9CHVRym8zktASDZ2-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -108,6 +108,24 @@
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-56" value="&lt;div&gt;@Configuration&lt;/div&gt;&lt;div&gt;@EnableResourceServer&lt;/div&gt;&lt;div&gt;public class CustomResourceServerConfig extends ResourceServerConfigurerAdapter&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="890" y="500" width="240" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-57" value="Client-sample" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="420" width="85" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-58" value="业务系统" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="460" width="72" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-59" value="监管系统" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="147.5" y="500" width="52" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-62" value="repo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="520" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-63" value="gateway" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="520" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-64" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EbfM9CHVRym8zktASDZ2-34" target="EbfM9CHVRym8zktASDZ2-34">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
