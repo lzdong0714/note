@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-19T02:16:27.090Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="axxUdXewyRuQ4WU2deTb" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-19T03:39:44.509Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="3b0oG6S6FzaKicd-162p" version="12.2.6" type="github" pages="1">
   <diagram id="NZ1MvinwC9dphN5qzvx4" name="Page-1">
     <mxGraphModel dx="2035" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -135,6 +135,9 @@
         </mxCell>
         <mxCell id="EbfM9CHVRym8zktASDZ2-66" value="&lt;div&gt;@Configuration&lt;/div&gt;&lt;div&gt;public class OAuth2ClientConfig extends WebSecurityConfigurerAdapter&lt;/div&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-180" y="270" width="250" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="EbfM9CHVRym8zktASDZ2-75" value="public class WebSecurityConfig extends WebSecurityConfigurerAdapter" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="400" width="190" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
