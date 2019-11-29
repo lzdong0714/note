@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-15T09:49:46.396Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="aB8mJofM0me9397lDUpa" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-29T07:36:00.668Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="gbxJw3_-TRHR5rklMyFR" version="12.3.3" type="github" pages="1">
   <diagram id="awLBeLxRA7o_fGoqpygC" name="测点管理">
-    <mxGraphModel dx="2680" dy="1773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4024" dy="2439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -2507,7 +2507,7 @@
           <mxGeometry x="-137.5" y="450.5" width="75" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="WqoS23Tll-ZS_1TjExVd-46" value="人工关联" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=#3D8BCD;align=center;strokeColor=#3D8BCD;fontColor=#ffffff;fontSize=14;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-154.5" y="864" width="93" height="48" as="geometry"/>
+          <mxGeometry x="-779" y="871" width="93" height="48" as="geometry"/>
         </mxCell>
         <mxCell id="WqoS23Tll-ZS_1TjExVd-50" value="北京" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#dddddd;;fillColor=#ffffff;align=left;spacingLeft=10;fontSize=16;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="2922" y="332" width="136" height="33" as="geometry"/>
