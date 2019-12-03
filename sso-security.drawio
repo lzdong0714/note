@@ -1,9 +1,12 @@
-<mxfile host="www.draw.io" modified="2019-11-29T06:34:27.635Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="KpRN2TGmwxl2LKIMrTpz" version="12.3.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-03T07:23:37.628Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="MQGqixL2K4gLOemG6dMD" version="12.3.5" type="github" pages="1">
   <diagram id="NZ1MvinwC9dphN5qzvx4" name="Page-1">
-    <mxGraphModel dx="3076" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2872" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1030" width="260" height="180" as="geometry"/>
+        </mxCell>
         <mxCell id="hAzDHQYxlsSDVjP9j_ip-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-780" y="1100" width="643" height="410" as="geometry"/>
         </mxCell>
@@ -253,6 +256,42 @@
         </mxCell>
         <mxCell id="hAzDHQYxlsSDVjP9j_ip-11" value="Admin_Code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-612" y="1160" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="QCKz1rk2ccgRRMg8vA8--14" target="QCKz1rk2ccgRRMg8vA8--20">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="771" width="202" height="199" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--15" value="Client&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="189" y="790" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--16" value="client_id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="199.5" y="825.5" width="91" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--17" value="client_sercet" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="229" y="864" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--18" value="usrname" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="893" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--19" value="password" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="204.5" y="922" width="81" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="QCKz1rk2ccgRRMg8vA8--20" target="QCKz1rk2ccgRRMg8vA8--26">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="821" width="290" height="259" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--22" value="sso" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="839.5" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--24" value="通过client_id获取client_表的各个信息并且设定到客户端token中细节中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="89" y="1100" width="180" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="QCKz1rk2ccgRRMg8vA8--25" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;通过contextPath，URI，Method获取角色，由匹配用户的权限信息&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="96.5" y="1040" width="185" height="70" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
