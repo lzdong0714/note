@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-12-06T08:47:21.145Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="r9MmqoLldy1G8q-R8exJ" version="12.3.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-09T02:42:05.248Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="qEkeS37z2tknoSSeq36x" version="12.3.8" type="github" pages="1">
   <diagram id="NZ1MvinwC9dphN5qzvx4" name="Page-1">
-    <mxGraphModel dx="3685" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3076" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -296,6 +296,37 @@
         </mxCell>
         <mxCell id="QCKz1rk2ccgRRMg8vA8--25" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;通过contextPath，URI，Method获取角色，由匹配用户的权限信息&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="73" y="1085" width="154" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-1" value="第一次启动微服务&lt;br&gt;向MySQL中注入API信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="295" width="160" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="410" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eYOd4Z1K1igR0sVCnVpQ-3" target="eYOd4Z1K1igR0sVCnVpQ-4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-3" value="开发环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="120" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eYOd4Z1K1igR0sVCnVpQ-4" target="eYOd4Z1K1igR0sVCnVpQ-6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eYOd4Z1K1igR0sVCnVpQ-4" target="eYOd4Z1K1igR0sVCnVpQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="235"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-4" value="生产环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="120" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-6" value="运维环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="120" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="eYOd4Z1K1igR0sVCnVpQ-8" value="版本更新" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="205" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
