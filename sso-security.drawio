@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-12T10:19:55.009Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="znDDgjaBT0Harz4S-3LE" version="12.3.9" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-12T10:39:58.614Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="duTf5_2nPZ8tojncWEIc" version="12.3.9" type="github" pages="1">
   <diagram id="NZ1MvinwC9dphN5qzvx4" name="Page-1">
     <mxGraphModel dx="3076" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -579,7 +579,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="USMyP67-8O-PpiU-QbpN-98" value="CustomAccessDecisionManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="1523" width="250" height="120" as="geometry"/>
+          <mxGeometry x="1290" y="1480" width="250" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="USMyP67-8O-PpiU-QbpN-99" value="重写 decide() 验证用户是否有访问API对应的&#xa;角色权限" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="USMyP67-8O-PpiU-QbpN-98">
           <mxGeometry y="26" width="250" height="44" as="geometry"/>
@@ -589,6 +589,12 @@
         </mxCell>
         <mxCell id="USMyP67-8O-PpiU-QbpN-101" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="USMyP67-8O-PpiU-QbpN-98">
           <mxGeometry y="78" width="250" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="USMyP67-8O-PpiU-QbpN-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="USMyP67-8O-PpiU-QbpN-65" target="USMyP67-8O-PpiU-QbpN-38">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="USMyP67-8O-PpiU-QbpN-110" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;在用户中添加的authorities如何&lt;br&gt;在decide()方法中遍历出来的。&lt;br&gt;什么时候注入的，如何debug出流程&lt;/font&gt;？&lt;/font&gt;" style="html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="1319" width="270" height="97" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
