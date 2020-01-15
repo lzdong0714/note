@@ -1,5 +1,8 @@
 ---
 
+
+
+
 typora-root-url: Pic4Frame
 ---
 
@@ -76,6 +79,26 @@ Sammy Sosa: {
     avg: 0.288
   }
 ```
+
+
+
+``` properties
+Map类型的数据
+	property.name.map.key_1 = value_1
+	property.name.map.key_2 = value_2	
+	对应的Map类型数据 Map<String, String> map ,等价 {"key_1":"value_1", "key_2":"value_2"}
+List类型数据
+	property.name.list[0] = value_1
+	property.name.list[1] = value_2
+所以List<Map<String, String>> list的数据类型书写：
+	property.name.list[0].key_1 = value_1
+	property.name.list[0].key_2 = value_2
+    property.name.list[1].key_1 = value_1
+	property.name.list[1].key_2 = value_2
+
+```
+
+
 
 
 
@@ -236,13 +259,21 @@ public class JdkProxyHandle{
 
  ### IOC
 
-​	spring框架加载
+​	spring框架加载上下文基本接口
 
-``` java
+![](/WebApplicationContext.jpg)
 
-```
+
+
+![](/企业微信截图_15764622843291.png)
+
+
+
+
 
 controller 层的参数注解
+
+同一个方法中@RequestBody是不能有两个的
 
 ``` java
 @PutMapping(value = "/path")
@@ -255,6 +286,10 @@ public ResponseBody controllerMethod(@RequsetParam(value = "value") variable_0,
 #### Security
 
 客户端，授权服务端，资源端
+
+authentication: 身份验证
+
+authorization:授权
 
 - 配置资源服务器
 
@@ -283,11 +318,15 @@ public ResponseBody controllerMethod(@RequsetParam(value = "value") variable_0,
 </dependency>
   ```
   
-  客户端提供
   
+  
+##### 客户端
+
+
+
   ``` java 
   // 客户端 提供clientId 和clientSecret的token发送验证的Provider
-  // 
+  // 这里与WebSecurityConfigurerAdapter 使用没有什么关系
   @Configuration
   public class OAuth2ClientConfig extends WebSecurityConfigurerAdapter{
   	@Bean
@@ -319,19 +358,32 @@ public ResponseBody controllerMethod(@RequsetParam(value = "value") variable_0,
       }
   }
   ```
-```java
-  
-  
 
-​``` java
-// 授权服务端
+##### 验证授权服务器端
+
+``` java
+// 授权服务端，都是对 ***Configurer的设定与自定义
 @Configuration
 @EnableAuthorizationServer
 public class OAuth2AuthServerConfig extends AuthorizationServerConfigurerAdapter {
+        /**
+     * 配置OAuth2授权服务器的访问安全策略，所有人都可以方法，但是要求检查授权，授权模式访问设定，。
+     */
     @Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
+        
 	}
 
+     /**
+     * 配置OAuth2授权服务器的ClientDetailsService。
+     * 
+     * 在身份认证时，从指定的ClientDetailsService中获取与请求Client对应的详细信息。
+     * OAuth2中有两个基本的ClientDetailsService实现类，分别是：
+     * {@link InMemoryClientDetailsService}，内存中存取ClientDetails；
+     * {@link JdbcClientDetailsService}，使用OAuth2内置表结构通过JDBC存取ClientDetails。
+     * 
+     * 可以指定自定义{@link ClientDetailsService}的实现类，以自定义方式存取ClientDetails。
+     */
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         // 对客户端的访问的处理，对访问信息自定义处理：
@@ -346,11 +398,62 @@ public class OAuth2AuthServerConfig extends AuthorizationServerConfigurerAdapter
         }
 	}
 
+    // 设置端点的信息的配置
+    /**
+     * 配置OAuth2授权服务器端点信息。
+     * 
+     * OAuth2授权服务器内置以下几个端点：
+     * /oauth/authorize : 授权码模式获取code，隐式模式获取token，参见{@link AuthorizationEndpoint}
+     * /oauth/token : 授权码、用户密码、客户端三种模式获取token，参见{@link TokenEndpoint}
+     * /oauth/check_token : 用于资源服务器调用此端口校验和解码token，http basic认证保护，参见{@link CheckTokenEndpoint} 
+     * /oauth/token_key : 使用JWT时，通过此端点访问JWT签名的加密key，参见{@link TokenKeyEndpoint}
+     * /oauth/confirm_access : 用于对访问进行确认，需要认证保护，否则报500。参见{@link WhitelabelApprovalEndpoint}
+     * /oauth/error : 错误处理端点，默认实现类参见{@link WhitelabelErrorEndpoint}
+     * 
+     * 可通过调用endpoints的pathMapping方法，改变默认的端点URL。
+     * 
+     */
 	@Override
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+        // 其中的
+        public final class AuthorizationServerEndpointsConfigurer{
+            // 全是一些对象属性。对属性用set 方法添加定义
+        }
 	}
 }
+
+//WebSecurityConfigurerAdapter 有点类是总体管理的一个类，管理登录访问的形式与配置
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+     @Override
+    public void configure(WebSecurity web) {
+        web.ignoring().antMatchers("/oauth/check_token");
+    }
+    
+    /**
+     * 在此处配置认证管理器AuthenticationManager
+     */
+     @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {   
+    	auth.authenticationProvider(customAuthenticationProvider());
+    }
+    
+     /**
+     * 在此处配置URI匹配认证规则，配置过滤器，配置跨域、csrf、登入/登出、成功/失败等
+     */
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+    }
+}
+
+
+
 ```
+
+
+
+
+
+##### 资源服务端
 
 ``` java
 // 资源服务器
@@ -374,7 +477,7 @@ public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter{
 
 
 
-#### SCAN
+#### Spring注解说明
 
 大家熟悉一下三个扫描装配bean的Spring 注解
 
@@ -403,12 +506,46 @@ Servlet、Filter、Listener 可以直接通过 @WebServlet、@WebFilter、@WebLi
 其实调用的是@ComponentScan
 
 ``` java
-@Componemt
+@Componemt(name = "selfDefineName")
 public Class SelfDefineClass{}
 
 @Configuration
-@Bean
+class {
+	@Bean
+    public SystemDefineClass methondName(){
+        // 用来注解方法，调用的时候和方法名相同，
+        // 通常用来构建依赖包中的类，交给spring管理
+    }
+}
 
+// ------------------调用-------------------------------
+@AutoWire(默认是用类名称)
+@Qualify(设定的名称)
+
+
+@Resource(name = "设定的名称")
+
+
+```
+
+Model中常用注解
+
+``` java
+@Data // 简化get，set
+@Access(chain = "true") // 链式调用
+@Bulider // 简化建造模式
+@ApiModel(description = "swagger 描述")
+class ModelDataItem{
+    @ApiProperty("")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss"， timezone = "GMT+8")// 格式化时间输出
+    @JsonProperty(value = "time") // 传递给前端的参数改名
+    LocalDateTime localDateTime;
+}
+```
+
+Controller中常用注解
+
+``` java
 
 ```
 
@@ -532,6 +669,10 @@ int insertAnalyzer(@Param("analyzer")Analyzer analyzer);
 
 
 
+#### mybits-plus使用：
+
+
+
 
 
 #### 不同数据源的连接
@@ -593,6 +734,14 @@ CREATE TABLE `mytesttable` (
 ) ENGINE=InnoDB DEFAULT CHARSET=gbk; 
 ```
 
+#### 数据库删除，自增重新开始
+
+``` sql
+用 alter table table_name AUTO_INCREMENT = n 命令来重设自增的起始值
+```
+
+
+
 
 
 #### 函数变量
@@ -610,6 +759,17 @@ set @item.reportTimeListStr = "2019-01-20,2019-04-10";
       WHERE
         msi.bind_id = 116;
 ```
+
+``` mysql
+mysql连接空字符串会造成空返回；
+CONCAT(IFNULL(express_1, express_2),column_1,column_2)
+```
+
+
+
+
+
+
 
 #### 选择表达式
 
@@ -657,16 +817,16 @@ END
 
 #### 聚合分组
 
-``` my
 
-```
 
 
 
 ## MAVEN
 
+[](https://www.runoob.com/maven/maven-tutorial.html) // meaven 的基本配置说明
+
 ``` shell
-mvn install:install-file -Dfile=aspose-cells-jdk16-8.5.2.jar -DgroupId=com.aspose.cells -DartifactId=aspose-cells-jdk16 -Dversion=8.5.2 -Dpackaging=jar
+mvn install:install-file -Dfile=hnty-cloud-common-data-0.5.0-SNAPSHOT.jar -DgroupId=com.hnty.cloud -DartifactId=hnty-cloud-common-data -Dversion=0.5.0-SNAPSHOT -Dpackaging=jar
 
 mvn install:install-file -Dfile=rules-core-1.1.0.jar -DgroupId=com.hntycloud -DartifactId=rules-core -Dversion=1.1.0 -Dpackaging=jar
 
@@ -780,8 +940,34 @@ maven命令： mvn package springboot springboot:repackage
 ``` sh
 服务器：node000 输入都是node000
 服务器：node001 输入都是node001
-
 ```
+
+## JavaSE
+
+#### Oject
+
+``` java
+private static final long serialVersionUID = 1L; // 序列化的标记
+
+// 对象相等
+equal：比较字符串内容相等
+== ：比较对象的地址相等
+hashcode :将对象放入HashSet， HashMap等Hash相关的集合时，如果两个对象的内容相同，即equal 为true，但是构造生成的hashcode不同，因而还是会放入两个相同的元素。所以要@Override hashcode 方法，使对象某些相同字段相同时计算相同的得到相同的hashcode值。覆写equals方法之后，一定要覆写hashCode
+```
+
+
+
+## Git
+
+### GitHub
+
+### GitLab
+
+
+
+
+
+
 
 
 
