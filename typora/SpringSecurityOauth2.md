@@ -742,7 +742,7 @@ protected OAuth2Authentication getOAuth2Authentication(ClientDetails client, Tok
 
 ![](/企业微信截图_15784499188662.png)
 
-前面的于登录一样，少了了一个**ClientCredentialsTokenEndpointFilter**，替换为**OAuth2AuthenticationProcessingFilter**开始不同。
+前面的于登录一样，少了了一个**ClientCredentialsTokenEndpointFilter**，替换为**OAuth2AuthenticationProcessingFilter**开始不同，用于token的校验。
 
 #### OAuth2AuthenticationProcessingFilter
 
@@ -795,7 +795,7 @@ public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 			}
 			eventPublisher.publishAuthenticationFailure(new BadCredentialsException(failed.getMessage(), failed),
 					new PreAuthenticatedAuthenticationToken("access-token", "N/A"));
-
+			// 主要处理token异常带来的OAuth2Exception 问题，通过自定义的异常解析
 			authenticationEntryPoint.commence(request, response,
 					new InsufficientAuthenticationException(failed.getMessage(), failed));
 
@@ -852,11 +852,25 @@ public Authentication authenticate(Authentication authentication) throws Authent
 
 ### 异常处理机制
 
+**身份验证问题**
+
+
+
+
+
 #### 登录超时
 
  #### 统一的异常处理
 
 在TokenEndPoint端
+
+登录验证异常
+
+身份验证异常
+
+访问权限异常
+
+
 
 
 

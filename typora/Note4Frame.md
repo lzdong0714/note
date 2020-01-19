@@ -3,6 +3,7 @@
 
 
 
+
 typora-root-url: Pic4Frame
 ---
 
@@ -841,6 +842,9 @@ mvn install:install-file -Dfile=hnty-cloud-common-security-0.5.0-SNAPSHOT.jar -D
 
 ``` xml
 jar包打包
+
+
+maven 主要使用的插件有maven-jar-plugin，maven-assembly-plugin，maven-dependency-plugin
  <!-- 不含依赖包，将依赖包设定位/lib目录下的读取,一般打出来的文件比较小 -->
 	<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -958,6 +962,22 @@ hashcode :将对象放入HashSet， HashMap等Hash相关的集合时，如果两
 
 
 ## Git
+
+``` sh
+git init
+git clone ${url} #g
+git add
+git log #查看日志,head历史
+git reset HEAD ${head}
+git reset --hard HEAD
+git diff #查看缓存的改动
+git status
+git rm  ${file}#删除文件
+git rm --cache  ${fileName}#从git同步清单中去除
+
+```
+
+
 
 ### GitHub
 
