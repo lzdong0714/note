@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-03T11:42:27.020Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="SAmFaZCQARIANdaB18LV" version="12.6.4" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-03T11:48:54.835Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="M4B_6WRx9RFzPxDowwOM" version="12.6.4" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
     <mxGraphModel dx="1589" dy="429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -184,7 +184,7 @@
         <mxCell id="8esMmhj8SaBt95nu7NH5-6" value="卫生信息数据元目录 第1部分：总则&lt;br&gt;&lt;br&gt;WS 363.1-2011" style="rounded=0;whiteSpace=wrap;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
           <mxGeometry x="330" y="960" width="150" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="8esMmhj8SaBt95nu7NH5-7" value="卫生信息基本数据集编制规范&lt;br&gt;&lt;br&gt;WS 370/375-2012" style="rounded=0;whiteSpace=wrap;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
+        <mxCell id="8esMmhj8SaBt95nu7NH5-7" value="卫生信息基本数据集编制规范&lt;br&gt;&lt;br&gt;WS 370-2012" style="rounded=0;whiteSpace=wrap;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
           <mxGeometry x="550" y="700" width="150" height="70" as="geometry"/>
         </mxCell>
         <mxCell id="8esMmhj8SaBt95nu7NH5-10" value="卫生信息数据元值域代码&lt;br&gt;&lt;br&gt;WS364.*-2011" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
@@ -197,10 +197,10 @@
           <mxGeometry x="1224.12" y="420" width="150" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="8esMmhj8SaBt95nu7NH5-13" value="妇女保健基本数据集&lt;br&gt;WS 377.*-2013" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
-          <mxGeometry x="740" y="570" width="150" height="90" as="geometry"/>
+          <mxGeometry x="810" y="530" width="150" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="8esMmhj8SaBt95nu7NH5-14" value="儿童保健基本数据集&lt;br&gt;WS 376.*-2013" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
-          <mxGeometry x="740" y="470" width="150" height="90" as="geometry"/>
+          <mxGeometry x="810" y="430" width="150" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="8esMmhj8SaBt95nu7NH5-15" value="电子病历共享档案共享文档&lt;br&gt;WS/T 500.*-2016" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
           <mxGeometry x="1230" y="539.24" width="150" height="90" as="geometry"/>
@@ -264,6 +264,18 @@
             <mxPoint x="1050" y="670" as="sourcePoint"/>
             <mxPoint x="1650" y="670" as="targetPoint"/>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="eCRVZmUIHYqlQB4n_LCs-14" value="疾病控制基本数据集&lt;br&gt;WS 375.*-2012" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="590" y="500" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="eCRVZmUIHYqlQB4n_LCs-15" value="卫生管理基本数据集&lt;br&gt;WS 37*.*-2012" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="590" y="390" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="eCRVZmUIHYqlQB4n_LCs-16" value="医疗服务基本数据集&lt;br&gt;WS 375.*-2012" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="590" y="270" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="eCRVZmUIHYqlQB4n_LCs-17" value="疾病管理基本数据集&lt;br&gt;WS 372.*-2012" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="590" y="170" width="150" height="90" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
