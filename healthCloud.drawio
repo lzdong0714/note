@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-03T02:39:03.171Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="CWwpkK8qOqAEHIqhQnpL" version="12.6.4" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-03T09:25:52.732Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="5Id518Zw-FxjBcjMpeiG" version="12.6.4" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
     <mxGraphModel dx="1695" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -159,24 +159,36 @@
     </mxGraphModel>
   </diagram>
   <diagram id="vnLtnP6AXCgvTba3pYJE" name="数据规范梳理">
-    <mxGraphModel dx="333" dy="296" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-0"/>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-1" parent="KogLLJCcUKu03Zdxu1c2-0"/>
-        <mxCell id="KogLLJCcUKu03Zdxu1c2-2" value="卫生信息共享编制规范" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
-          <mxGeometry x="340" y="150" width="140" height="60" as="geometry"/>
+        <mxCell id="KogLLJCcUKu03Zdxu1c2-2" value="卫生信息共享编制规范&lt;br&gt;&lt;br&gt;&lt;span style=&quot;text-align: left ; white-space: nowrap&quot;&gt;WS/T 482 - 2016&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
+          <mxGeometry x="235" y="180" width="155" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="KogLLJCcUKu03Zdxu1c2-3" value="卫生信息共享编制规范" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
-          <mxGeometry x="210" y="240" width="140" height="104" as="geometry"/>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-0" value="卫生信息数据元标准化规则&lt;br&gt;&lt;br&gt;WS/T 303-2009&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="50" y="550" width="150" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="KogLLJCcUKu03Zdxu1c2-4" value="WS/T 482 - 2016" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-3">
-          <mxGeometry y="26" width="140" height="26" as="geometry"/>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-2" value="卫生信息数据集分类与编码规则&lt;br&gt;&lt;br&gt;WS/T 306-2009&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="242.5" y="550" width="150" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="KogLLJCcUKu03Zdxu1c2-5" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-3">
-          <mxGeometry y="52" width="140" height="26" as="geometry"/>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-3" value="卫生信息数据模式描述指南&lt;br&gt;&lt;br&gt;WS/T 304-2009&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="50" y="650" width="150" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="KogLLJCcUKu03Zdxu1c2-6" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-3">
-          <mxGeometry y="78" width="140" height="26" as="geometry"/>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-4" value="卫生信息数据集元数据规范&lt;br&gt;&lt;br&gt;WS/T 305-2009" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="242.5" y="650" width="147.5" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-5" value="卫生信息数据元值域代码 第1部分：总则&lt;br&gt;&lt;br&gt;WS 364.1-2011" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="50" y="430" width="150" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-6" value="卫生信息数据元目录 第1部分：总则&lt;br&gt;&lt;br&gt;WS 363.1-2011" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="240" y="430" width="150" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-7" value="卫生信息基本数据集编制规范&lt;br&gt;&lt;br&gt;WS 370/375-2012" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="235" y="310" width="150" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="8esMmhj8SaBt95nu7NH5-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="510" y="440" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
