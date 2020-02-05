@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-05T02:27:24.962Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="5zKOHExbeHTKfADrAu4P" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T02:54:19.777Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="osq18auN7yD9u4DBMI0q" version="12.6.5" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
     <mxGraphModel dx="1478" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -159,7 +159,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="vnLtnP6AXCgvTba3pYJE" name="数据规范梳理">
-    <mxGraphModel dx="2274" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1848" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-0"/>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-1" parent="KogLLJCcUKu03Zdxu1c2-0"/>
@@ -351,6 +351,9 @@
         <mxCell id="QynRcSKPo6_Hihe-5Z06-0" value="组织机构划分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
           <mxGeometry y="840" width="120" height="60" as="geometry"/>
         </mxCell>
+        <mxCell id="QynRcSKPo6_Hihe-5Z06-23" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="QynRcSKPo6_Hihe-5Z06-4" target="QynRcSKPo6_Hihe-5Z06-22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
         <mxCell id="QynRcSKPo6_Hihe-5Z06-4" value="信息安全与隐私" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
           <mxGeometry y="1000" width="120" height="60" as="geometry"/>
         </mxCell>
@@ -380,6 +383,9 @@
         </mxCell>
         <mxCell id="QynRcSKPo6_Hihe-5Z06-20" value="&lt;span style=&quot;white-space: normal&quot;&gt;WS 218-2002 卫生机构（组织）分类与代码&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
           <mxGeometry x="245" y="780" width="135" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="QynRcSKPo6_Hihe-5Z06-22" value="医学电子文档数字签名技术规范（征求）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="265" y="970" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
