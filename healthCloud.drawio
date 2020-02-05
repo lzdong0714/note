@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-04T11:02:06.722Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="TIFxgzOp6t-lO6D7Qoh1" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T01:19:49.145Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="lS4jQ2_ukaQ9JplD2F-c" version="12.6.5" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
-    <mxGraphModel dx="1589" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2274" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -159,14 +159,20 @@
     </mxGraphModel>
   </diagram>
   <diagram id="vnLtnP6AXCgvTba3pYJE" name="数据规范梳理">
-    <mxGraphModel dx="1916" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2067" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-0"/>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-1" parent="KogLLJCcUKu03Zdxu1c2-0"/>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-0" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="KogLLJCcUKu03Zdxu1c2-2" target="8esMmhj8SaBt95nu7NH5-12">
+        <mxCell id="TMiB85IYn3Cq02z53IZ_-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="1180.24" y="152.5" width="499.76" height="495" as="geometry"/>
+        </mxCell>
+        <mxCell id="TMiB85IYn3Cq02z53IZ_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="330" y="150" width="840" height="500" as="geometry"/>
+        </mxCell>
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-0" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="KogLLJCcUKu03Zdxu1c2-2" target="8esMmhj8SaBt95nu7NH5-12" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="KogLLJCcUKu03Zdxu1c2-2" target="8esMmhj8SaBt95nu7NH5-15">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="KogLLJCcUKu03Zdxu1c2-2" target="8esMmhj8SaBt95nu7NH5-15" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="KogLLJCcUKu03Zdxu1c2-2" value="卫生信息共享编制规范&lt;br&gt;&lt;br&gt;&lt;span style=&quot;text-align: left ; white-space: nowrap&quot;&gt;WS/T 482 - 2016&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
@@ -193,28 +199,28 @@
         <mxCell id="8esMmhj8SaBt95nu7NH5-6" value="卫生信息数据元目录 第1部分：总则&lt;br&gt;&lt;br&gt;WS 363.1-2011" style="rounded=0;whiteSpace=wrap;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
           <mxGeometry x="150" y="480" width="150" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-2" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-17">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-2" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-17" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-16">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-16" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-4" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-15">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-4" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-15" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-5" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-14">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-5" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-14" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-6" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-18">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-6" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-18" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-7" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="8esMmhj8SaBt95nu7NH5-14">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-7" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="8esMmhj8SaBt95nu7NH5-14" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-8" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="8esMmhj8SaBt95nu7NH5-13">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-8" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="8esMmhj8SaBt95nu7NH5-13" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-9" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" edge="1" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-19">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-9" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52;entryPerimeter=0;" parent="KogLLJCcUKu03Zdxu1c2-1" source="8esMmhj8SaBt95nu7NH5-7" target="eCRVZmUIHYqlQB4n_LCs-19" edge="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="8esMmhj8SaBt95nu7NH5-7" value="卫生信息基本数据集编制规范&lt;br&gt;&lt;br&gt;WS 370-2012" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
@@ -316,14 +322,20 @@
         <mxCell id="eCRVZmUIHYqlQB4n_LCs-19" value="电子病历基本数据集&lt;br&gt;WS 445.*-2014" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
           <mxGeometry x="1000" y="530" width="150" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="eCRVZmUIHYqlQB4n_LCs-24" value="&lt;font style=&quot;font-size: 17px&quot;&gt;XML格式的数据样例&lt;/font&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
-          <mxGeometry x="1397.57" y="280" width="200" height="20" as="geometry"/>
+        <mxCell id="eCRVZmUIHYqlQB4n_LCs-24" value="&lt;font style=&quot;font-size: 17px&quot;&gt;XML格式的文档管理&lt;/font&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
+          <mxGeometry x="1412.57" y="110" width="200" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="eCRVZmUIHYqlQB4n_LCs-23" value="&lt;span style=&quot;font-size: 17px&quot;&gt;表结构的数据说明&lt;/span&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
-          <mxGeometry x="810" y="280" width="200" height="20" as="geometry"/>
-        </mxCell>
-        <mxCell id="t-dbLPMyQyexl6xu1qoX-10" value="卫生信息数据集分类与编码规则&lt;br&gt;&lt;br&gt;WS/T 306-2009&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+        <mxCell id="t-dbLPMyQyexl6xu1qoX-10" value="卫生信息数据集分类与编码规则&lt;br&gt;&lt;br&gt;WS/T 306-2009&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="KogLLJCcUKu03Zdxu1c2-1" vertex="1">
           <mxGeometry x="-30" y="390" width="150" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="TMiB85IYn3Cq02z53IZ_-3" value="&lt;font style=&quot;font-size: 26px&quot;&gt;对应数据库的表结构&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="850" y="215" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="TMiB85IYn3Cq02z53IZ_-4" value="***基本数据集&lt;br&gt;WS **-**" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="990" y="330" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="TMiB85IYn3Cq02z53IZ_-6" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;对应WORD，PDF类的报告文件结构&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="1250.82" y="250" width="402.43" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
