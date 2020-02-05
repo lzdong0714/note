@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-05T01:55:44.733Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="xyF39Z_dyrPrO6pER_7K" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T01:57:11.881Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="lS68O-T6p1HIJ-p7LL6C" version="12.6.5" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
     <mxGraphModel dx="1478" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -345,6 +345,12 @@
         </mxCell>
         <mxCell id="QynRcSKPo6_Hihe-5Z06-1" value="WS 218-2002 卫生机构（组织）分类与代码" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
           <mxGeometry x="240" y="770" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="QynRcSKPo6_Hihe-5Z06-4" value="信息安全与隐私" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="-2.5" y="1000" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="QynRcSKPo6_Hihe-5Z06-5" value="信息平台建设要求" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="KogLLJCcUKu03Zdxu1c2-1">
+          <mxGeometry x="530" y="850" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
