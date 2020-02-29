@@ -1,9 +1,14 @@
-<mxfile host="www.draw.io" modified="2020-02-27T08:46:55.671Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="4_IrrzkJuGbGuEEYex-s" version="12.7.8" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2020-02-29T01:20:02.118Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="tF__vVc_3u45CmiYdoLl" version="12.7.8" type="github" pages="3">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
-    <mxGraphModel dx="3377" dy="517" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3691" dy="647" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I9_Y1sRzMDtHukwF0xvd-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1216.234375" y="2666.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="DPXQX72hT8btnvu_0zh3-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=oval;endFill=1;" parent="1" source="DPXQX72hT8btnvu_0zh3-22" target="DPXQX72hT8btnvu_0zh3-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -1934,9 +1939,6 @@
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-1" value="门诊挂号" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1999" y="2645" width="91" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="I9_Y1sRzMDtHukwF0xvd-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1342" y="2810" width="139" height="51" as="geometry" />
-        </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-3" value="门诊诊断" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1908" y="2645" width="88" height="40" as="geometry" />
         </mxCell>
@@ -1955,14 +1957,19 @@
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-9" value="医师诊疗信息" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1680" y="2499" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="I9_Y1sRzMDtHukwF0xvd-10" value="检验检查" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-10" value="检验" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1820" y="2645" width="92" height="41" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-11" value="开医嘱" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1728" y="2644" width="93" height="43" as="geometry" />
+          <mxGeometry x="-1636" y="2644.75" width="93" height="43" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-12" value="开处方" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1635" y="2644.5" width="88" height="43.5" as="geometry" />
+          <mxGeometry x="-1543" y="2642.25" width="88" height="43.5" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I9_Y1sRzMDtHukwF0xvd-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-881.234375" y="2786.26171875" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-13" value="住院业务线" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2192" y="2762" width="120" height="80" as="geometry" />
@@ -1971,19 +1978,61 @@
           <mxGeometry x="-2194" y="2888" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-15" value="手术记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1619" y="2770" width="111" height="49" as="geometry" />
+          <mxGeometry x="-1814" y="2741" width="111" height="49" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-16" value="输血记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1764" y="2767" width="95" height="52" as="geometry" />
+          <mxGeometry x="-2002" y="2740" width="95" height="52" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-17" value="麻醉记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1764" y="2819" width="95" height="52" as="geometry" />
+          <mxGeometry x="-1909" y="2740" width="95" height="52" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-18" value="住院医嘱" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1605" y="2830" width="95" height="52" as="geometry" />
+          <mxGeometry x="-1703" y="2739.5" width="95" height="52" as="geometry" />
         </mxCell>
         <mxCell id="I9_Y1sRzMDtHukwF0xvd-20" value="首次病程记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1758" y="2898" width="120" height="60" as="geometry" />
+          <mxGeometry x="-1608" y="2741" width="98" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-21" value="病程记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1903" y="2794.5" width="104" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-22" value="上级医师查房记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2002" y="2794.5" width="99" height="51.5" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-23" value="疑难病历讨论记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1799" y="2796.25" width="114" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-24" value="交接班记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1685" y="2794" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-25" value="转科记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1510" y="2739" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-27" value="会诊记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1418" y="2790" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-26" value="阶段小结记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1550" y="2791.5" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-30" value="术前小结" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1375" y="2737" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-31" value="术后首次病程记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1242" y="2737" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-32" value="出院记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1286" y="2790" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-33" value="死亡记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1151" y="2788" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-34" value="死亡病历讨论" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1107" y="2737" width="135" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-36" value="检查" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1728" y="2645.75" width="92" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="I9_Y1sRzMDtHukwF0xvd-40" value="业务点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1415" y="2914" width="94" height="51" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
