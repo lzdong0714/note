@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-03-05T09:18:53.870Z" agent="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="DXpwmrk46eq9em-HZOeU" version="12.7.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-04-21T03:45:46.890Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="4kDYE_rfvwT6YYhcNGts" version="12.9.10" type="github" pages="3">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="流程图">
-    <mxGraphModel dx="3691" dy="647" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5304" dy="1470" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3005,336 +3005,170 @@
     
   </diagram>
   <diagram id="d2GtIHOnPrm7KZQ-Ps02" name="业务的数据标准支撑">
-    
-    <mxGraphModel dx="1210" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      
+    <mxGraphModel dx="1328" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        
         <mxCell id="9ZKJkl6kmk9VWyQpq7Ey-0" />
-        
         <mxCell id="9ZKJkl6kmk9VWyQpq7Ey-1" parent="9ZKJkl6kmk9VWyQpq7Ey-0" />
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-5" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" source="ttqoR6DUajeOeL0v6Kus-0" target="ttqoR6DUajeOeL0v6Kus-1" edge="1">
-          
           <mxGeometry relative="1" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-6" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" source="ttqoR6DUajeOeL0v6Kus-0" target="ttqoR6DUajeOeL0v6Kus-2" edge="1">
-          
           <mxGeometry relative="1" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-7" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" source="ttqoR6DUajeOeL0v6Kus-0" target="ttqoR6DUajeOeL0v6Kus-3" edge="1">
-          
           <mxGeometry relative="1" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-8" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" source="ttqoR6DUajeOeL0v6Kus-0" target="ttqoR6DUajeOeL0v6Kus-4" edge="1">
-          
           <mxGeometry relative="1" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-0" value="基层健康云" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry y="610" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-1" value="基本医疗服务" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="190" y="430" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-2" value="公共卫生服务" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="190" y="540" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-3" value="家庭医生服务" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="190" y="650" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-4" value="行政监管服务" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="190" y="750" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-9" value="基层医疗卫生系统&lt;br&gt;517-2016" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="750" y="300" width="160" height="70" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-10" value="&lt;font style=&quot;font-size: 20px&quot;&gt;健康档案管理&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="450" y="430" width="140" height="70" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-11" value="&lt;font style=&quot;font-size: 20px&quot;&gt;基本公共卫生服务&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="680" y="434" width="140" height="66" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-12" value="&lt;font style=&quot;font-size: 20px&quot;&gt;基本医疗服务&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="910" y="432.5" width="140" height="67.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-13" value="&lt;font style=&quot;font-size: 20px&quot;&gt;健康信息服务&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1185" y="432.5" width="150" height="70" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-15" value="居民健康档案" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="355" y="554" width="100" height="46" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-16" value="居民健康卡管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="480" y="554" width="100" height="40" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-17" value="家庭健康档案管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="605" y="554" width="100" height="38.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-19" value="健康教育" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="480" y="636.25" width="100" height="47.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-20" value="预防接种" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="600" y="638.75" width="100" height="45" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-21" value="儿童健康管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="738.5" y="640" width="100" height="45" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-22" value="孕妇健康管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="737" y="725" width="103" height="47.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-23" value="老年人健康管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="350" y="725" width="100" height="45" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-24" value="高血压者健康管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="480" y="722.5" width="100" height="47.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-25" value="2型糖尿病患者" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="600" y="722.5" width="110" height="47.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-26" value="重性精神病患者健康管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="350" y="805" width="100" height="40" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-27" value="传染病及突发公共卫生事件管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="475" y="800" width="110" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-28" value="卫生监督协管" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="605" y="800" width="110" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-29" value="计划生育" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="738.5" y="800" width="100" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-30" value="健康档案查询" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1185" y="640" width="100" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-31" value="健康信息发布" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1185" y="737" width="110" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-32" value="网上预约提醒" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1305" y="640" width="105" height="47" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-33" value="健康教育信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1310" y="737" width="100" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-34" value="&lt;font style=&quot;font-size: 20px&quot;&gt;机构运营管理&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1468" y="435" width="140" height="65" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-35" value="&lt;font style=&quot;font-size: 20px&quot;&gt;监管接口&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1850" y="445" width="120" height="55" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-38" value="全科诊疗" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="890" y="638.75" width="100" height="51.25" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-39" value="住院管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="890" y="725.5" width="100" height="47" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-40" value="家庭病床与护理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="890" y="803.25" width="100" height="43.5" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-41" value="健康体检" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1015" y="803.25" width="95" height="40" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-42" value="检验，检查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1010" y="640" width="100" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-43" value="双向转诊" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1015" y="725" width="95" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-44" value="基本药物管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1460" y="640" width="118" height="45" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-45" value="药库管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1460" y="700" width="120" height="47" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-46" value="物质管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1458" y="762" width="120" height="48" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-47" value="设备管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1615" y="643" width="118" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-48" value="财务管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1615" y="703" width="118" height="50" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-49" value="绩效考核" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
-          <mxGeometry x="1625" y="773" width="120" height="40" as="geometry" />
-          
+          <mxGeometry x="1613" y="770" width="120" height="40" as="geometry" />
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-50" value="统计分析与综合查询" style="rounded=1;whiteSpace=wrap;html=1;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1560" y="1070" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-51" value="基本公共卫生监管" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1860" y="638.75" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-52" value="基本医疗服务监管" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="2010" y="638.75" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-53" value="基本药物监管" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="1860" y="717.25" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="ttqoR6DUajeOeL0v6Kus-54" value="新农合补偿监管" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="2010" y="717.25" width="120" height="60" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="Zb3ZNPNS0BTjsLG557An-0" value="&lt;font style=&quot;font-size: 18px&quot; color=&quot;#ffffff&quot;&gt;&lt;b&gt;&lt;span class=&quot;fontstyle0&quot;&gt;WS 365-2011 城乡居民健康档案基本数据集&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="140" y="933.75" width="140" height="70" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="Zb3ZNPNS0BTjsLG557An-1" value="&lt;font style=&quot;font-size: 18px&quot; color=&quot;#ffffff&quot;&gt;&lt;b&gt;&lt;span class=&quot;fontstyle0&quot;&gt;WS 537-2017 居民健康卡数据集&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" parent="9ZKJkl6kmk9VWyQpq7Ey-1" vertex="1">
-          
           <mxGeometry x="325.00000000000006" y="930" width="150" height="73.75" as="geometry" />
-          
         </mxCell>
-        
       </root>
-      
     </mxGraphModel>
-    
   </diagram>
 </mxfile>
