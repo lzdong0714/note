@@ -13,6 +13,12 @@ Quartz：用来任务调度的框架
 
 Stomp：就像HTTP在TCP套接字之上添加了请求-响应模型层一样，STOMP在WebSocket之上提供了一个基于帧的线路格式（frame-based wire format）层，用来定义消息的语义。
 
+## WEB
+
+
+
+
+
 ## Sping
 
 #### 配置规则
@@ -111,9 +117,45 @@ public enum RequestMethod {
 }
 ```
 
+``` java
+@Configuration
+public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter{
+//	web应用启动的顺序是：listener->filter->servlet，先初始化listener，然后再来就filter的初始化，
+//	再接着才到我们的dispathServlet的初始化，
+//	因此，当我们需要在filter里注入一个注解的bean时，就会注入失败，因为filter初始化时，注解的bean还没初始化，没法注入。
+//	所以需要创建filter的时候 需要@Bean初始化一下
+
+	@Bean
+	public DoubleLoginFilter doubleLoginFilter(){
+		return new DoubleLoginFilter(jwtTokenStore());
+	}
+
+	/**
+	 * 对OAuth2资源服务器中的资源URL进行访问权限配置
+	 */
+	@Override
+	public void configure(HttpSecurity http) throws Exception {
+		// 增加操作日志记录的Filter。放在异常处理Filter和权限验证Filter之间
+        http.antMatcher("/**").addFilterBefore(new OperationLoggingFilter(operationLogService),
+        		FilterSecurityInterceptor.class);
+        // 添加登录检测Fliter。放在异常处理之前，抛出在线检测异常，然后捕获显示。
+		http.antMatcher("/**").addFilterBefore(doubleLoginFilter(),
+				OperationLoggingFilter.class);
+	}
+}
+```
 
 
 
+### MVC
+
+到HttpServlet还是原生的javax ，其他的都是Spring中的。MVC的核心DispatcherServlet地位如图。
+
+![](/企业微信截图_15872941021799.png)
+
+统计全网站访问量，用自定义Servlet，检验用户登录，过滤权限用Filter。对Handler的增强用Interceptor。用netty自定义一个服务
+
+![](/企业微信截图_15872974382275.png)
 
 ### AOP
 
@@ -550,6 +592,10 @@ Controller中常用注解
 
 ```
 
+ ###  Spring的工具类
+
+
+
 
 
 ## Mybaits
@@ -743,6 +789,47 @@ CREATE TABLE `mytesttable` (
 
 
 
+ #### 去重插入
+
+``` sql
+nsert tbl_warning(
+        coluqOrganizationID,
+        coluqSchemeID,
+        coluqSchemeStationPlanID,
+        colWarningItemID,
+        colWarningTime,
+        colWarningContent
+        ) SELECT
+        #{warningEntity.coluqOrganizationID},
+        #{warningEntity.coluqSchemeID},
+        #{warningEntity.coluqSchemeStationPlanID},
+        #{warningEntity.colWarningItemID},
+        #{warningEntity.colWarningTime},
+        #{warningEntity.colWarningContent}
+        FROM DUAL
+        WHERE
+        not exists(
+            SELECT 1
+            FROM tbl_warning
+            WHERE
+            (
+            coluqOrganizationID = #{warningEntity.coluqOrganizationID} or coluqOrganizationID is null
+            )
+            AND (
+            coluqSchemeID = #{warningEntity.coluqSchemeID} or coluqSchemeID is null
+            )
+            AND (
+            coluqSchemeStationPlanID = #{warningEntity.coluqSchemeStationPlanID} or coluqSchemeStationPlanID is null
+            )
+            AND (
+            colWarningItemID = #{warningEntity.colWarningItemID} or colWarningItemID is null
+            )
+            AND (
+            colWarningContent = #{warningEntity.colWarningContent} or colWarningContent is null
+            )
+        )
+```
+
 
 
 #### 函数变量
@@ -767,6 +854,81 @@ CONCAT(IFNULL(express_1, express_2),column_1,column_2)
 ```
 
 
+
+#### MYSQL函数与存储过程
+
+``` sql
+<!--  -->
+
+
+
+
+
+```
+
+### MYSQL 递归查询
+
+``` sql
+
+WITH RECURSIVE cte_name(columns * ) AS (
+    initial_query  -- anchor member
+    UNION ALL
+    recursive_query -- recursive member that references to the CTE name
+)SELECT * FROM cte_name;
+-- 递归CTE由三个主要部分组成：
+
+-- 形成CTE结构的基本结果集的初始查询(initial_query)，初始查询部分被称为锚成员。
+递归查询部分是引用CTE名称的查询，因此称为递归成员。递归成员由一个UNION ALL或UNION DISTINCT运算符与锚成员相连。
+终止条件是当递归成员没有返回任何行时，确保递归停止。
+递归CTE的执行顺序如下：
+
+首先，将成员分为两个：锚点和递归成员。
+接下来，执行锚成员形成基本结果集(R0)，并使用该基本结果集进行下一次迭代。
+然后，将Ri结果集作为输入执行递归成员，并将Ri+1作为输出。
+之后，重复第三步，直到递归成员返回一个空结果集，换句话说，满足终止条件。
+最后，使用UNION ALL运算符将结果集从R0到Rn组合。
+注意：递归成员只能在其子句中引用CTE名称，而不是引用任何子查询
+
+
+
+create table item_tree(
+  sn_id int auto_increment comment '行号' primary key,
+  moniker varchar(20) null comment '名称',
+	context varchar(20) NULL COMMENT '内容',
+	item_id int(11) null comment '归属id',
+  parent_id int(11) null comment '父id',
+	item_level int(11) NULL COMMENT '等级'
+)comment '层级递归';
+-- # 插入测试数据
+INSERT INTO item_tree (item_id, parent_id,item_level) VALUES (1001, 101 ,4);
+INSERT INTO item_tree (item_id, parent_id,item_level) VALUES (1002, 101 ,4);
+INSERT INTO item_tree (item_id, parent_id,item_level) VALUES (101, 11,3);
+INSERT INTO item_tree (item_id, parent_id,item_level) VALUES (11, 2 ,2);
+INSERT INTO item_tree (item_id, parent_id,item_level) VALUES (2, null ,1);
+
+
+-- 自下往上搜索
+WITH RECURSIVE
+child(item_id, parent_id, item_level) AS(
+  SELECT item_id, parent_id, item_level
+  FROM item_tree WHERE item_id = 2 -- 顶层节点终止条件
+  UNION ALL
+  SELECT A.item_id, A.parent_id,  A.item_level 
+  FROM item_tree A JOIN child B ON A.parent_id = B.item_id
+)
+SELECT * FROM child;
+
+
+--- 自上向下递归 给出收索路径的节点值
+WITH RECURSIVE
+parent(item_id, parent_id, item_level) AS(
+  SELECT item_id, parent_id,item_level
+  FROM item_tree WHERE item_id = 1002  -- 底层节点终止条件
+  UNION ALL
+  SELECT A.item_id, A.parent_id, A.item_level 
+  FROM item_tree A JOIN parent B ON A.item_id = B.parent_id
+)SELECT  * FROM parent
+```
 
 
 
@@ -982,6 +1144,108 @@ git rm --cache  ${fileName}#从git同步清单中去除
 ### GitHub
 
 ### GitLab
+
+#### GitLab-Runner
+
+``` sh
+root@iZ8vbgiaul3ujqlibwm521Z:~# curl -sSL https://get.daocloud.io/docker | sh
+# Executing docker install script, commit: 1b02882d63b9cfc484ad6b0180171c679cfe0f3a
++ sh -c apt-get update -qq >/dev/null
++ sh -c DEBIAN_FRONTEND=noninteractive apt-get install -y -qq apt-transport-https ca-certificates curl >/dev/null
++ sh -c curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | apt-key add -qq - >/dev/null
+Warning: apt-key output should not be parsed (stdout is not a terminal)
++ sh -c echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list
++ sh -c apt-get update -qq >/dev/null
++ [ -n  ]
++ sh -c apt-get install -y -qq --no-install-recommends docker-ce >/dev/null
+
++ sh -c docker version
+Client: Docker Engine - Community
+ Version:           19.03.8
+ API version:       1.40
+ Go version:        go1.12.17
+ Git commit:        afacb8b7f0
+ Built:             Wed Mar 11 01:25:46 2020
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          19.03.8
+  API version:      1.40 (minimum version 1.12)
+  Go version:       go1.12.17
+  Git commit:       afacb8b7f0
+  Built:            Wed Mar 11 01:24:19 2020
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.2.13
+  GitCommit:        7ad184331fa3e55e52b890ea95e65ba581ae3429
+ runc:
+  Version:          1.0.0-rc10
+  GitCommit:        dc9208a3303feef5b3839f4323d9beb36df0a9dd
+ docker-init:
+  Version:          0.18.0
+  GitCommit:        fec3683
+If you would like to use Docker as a non-root user, you should now consider
+adding your user to the "docker" group with something like:
+
+  sudo usermod -aG docker your-user
+
+Remember that you will have to log out and back in for this to take effect!
+
+WARNING: Adding a user to the "docker" group will grant the ability to run
+         containers which can be used to obtain root privileges on the
+         docker host.
+         Refer to https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface
+         for more information.
+
+```
+
+``` sh
+
+
+hss_his^H^H^[[3~^[[D^[[C^[[1;5D^[[1;5D^[[C^FF^[[3~^[[D^[[D^[[Cjj^
+```
+
+
+
+
+
+``` sh
+
+root@iZ8vbgiaul3ujqlibwm521Z:~# docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
+Unable to find image 'gitlab/gitlab-runner:latest' locally
+latest: Pulling from gitlab/gitlab-runner
+5bed26d33875: Pull complete 
+f11b29a9c730: Pull complete 
+930bda195c84: Pull complete 
+78bf9a5ad49e: Pull complete 
+3d067b4c5be4: Pull complete 
+834f0c22adc5: Pull complete 
+070872dc265e: Pull complete 
+4fc26521568a: Pull complete 
+5bbe5d326786: Pull complete 
+Digest: sha256:7985ff7558b0c7f49d56c1c7ee8c2343b687b6a88b05a7b3f26ebde206cc5e30
+Status: Downloaded newer image for gitlab/gitlab-runner:latest
+Runtime platform                                    arch=amd64 os=linux pid=6 revision=ce065b93 version=12.10.1
+Running in system-mode.                            
+                                                   
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
+https://gitlab.hntyhb.com.cn/
+Please enter the gitlab-ci token for this runner:
+yQQ4pUBjQd361Mi7hi1Y
+Please enter the gitlab-ci description for this runner:
+[dd31d5272e95]: hss_his^H^H^[[3~^[[D^[[C^[[1;5D^[[1;5D^[[C^FF^[[3~^[[D^[[D^[[Cjj^HPlease enter the gitlab-ci tags for this runner (comma separated):
+hnty
+Registering runner... succeeded                     runner=yQQ4pUBj
+Please enter the executor: docker, shell, virtualbox, kubernetes, custom, docker-ssh, parallels, ssh, docker+machine, docker-ssh+machine:
+docker
+Please enter the default Docker image (e.g. ruby:2.6):
+latest
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded! 
+
+```
 
 
 

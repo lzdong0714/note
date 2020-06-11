@@ -862,7 +862,20 @@ public Authentication authenticate(Authentication authentication) throws Authent
 
  #### 统一的异常处理
 
-在TokenEndPoint端
+在TokenEndPoint端参考TokenEndpoint用
+
+``` java
+@ExceptionHandler(HttpRequestMethodNotSupportedException.class)
+	public ResponseEntity<OAuth2Exception> handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e) throws Exception {
+		if (logger.isInfoEnabled()) {
+			logger.info("Handling error: " + e.getClass().getSimpleName() + ", " + e.getMessage());
+		}
+	    return getExceptionTranslator().translate(e);
+	}
+}
+```
+
+
 
 登录验证异常
 

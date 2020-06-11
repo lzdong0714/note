@@ -38,3 +38,49 @@
 
 `Internet`委员会定义了5种`IP地址`类型以适合不同容量的网络，即A类~E类。
  其中A、B、C3类（如下表格）由`InternetNIC`在全球范围内统一分配，D、E类为特殊地址。
+
+
+
+## LINUX
+
+### 系统知识
+
+Filesystem Hierarcy Standard 标准，令常用Linux目录结构一样。
+
+  /usr   /var  /home三个目录区别与使用
+
+|        | 可分享的（可以网络挂载）                 | 不可分享的           |
+| ------ | ---------------------------------------- | -------------------- |
+| 不变的 | /usr （软件放置处，类是C盘programFiles） | /etc  配置文件       |
+|        | /opt                                     | /boot 开机与核心文档 |
+| 可变的 | /var/mail                                | /var/run             |
+|        |                                          |                      |
+
+以上应该都是归管理员管理，管理员创建的用户应当登录后的当前路径为：/home/user
+
+日常开发测试，应当在/home 下进行，正式部署在另外的层级目录下，避免开发测试的干扰。
+
+### 常用命令
+
+``` shell
+ll /proc/PID
+
+cwd符号链接的是进程运行目录；
+
+exe符号连接就是执行程序的绝对路径；
+
+cmdline就是程序运行时输入的命令行命令；
+
+environ记录了进程运行时的环境变量；
+
+fd目录下是进程打开或使用的文件的符号连接。
+```
+
+建立新用户，设定用户密码
+
+https://www.runoob.com/linux/linux-user-manage.html
+
+设定后，记得修改用户使用的shell 命令方式：usermod -s /bin/bash username username是建立用户的用户名
+
+### shell
+
