@@ -84,3 +84,80 @@ https://www.runoob.com/linux/linux-user-manage.html
 
 ### shell
 
+基本帮助指令
+
+```shell
+command -options parameter1 parameter2 #基本格式
+command --help  #用来查看帮助
+
+#输入指令，部分，连按两次tab，会补全查询所有的指令
+ca[tab][tab]
+
+Ctrl + c 中断
+Ctrl + d 退出
+
+man [command] #查看指令的操作说明
+info [command] #查看在线操作说明
+#EP:
+date --help
+man date
+info date
+
+#关机
+who #查看链接用户状态
+netstat -a #查看网络联机状态
+ps -aux #查看后台执行程序状态
+sync #数据同步写入硬盘中
+shutdown #惯用关机
+reboot,halt,poweroff # 重新启动
+```
+
+#### 文件
+
+[权限] [连结] [拥有者] [群组] [文件容量] [修改日期]  [文件名]
+
+``` shell
+#root 权限下的指令：
+	chgrp #change group
+    chown #change owner
+#user 权限
+chmod # change 权限 r：读（1） w:写（2） x：执行（4）
+# 三组权限分别事 onwer/group/other
+chmod 770 fileName 
+chmod u=rwx,g=rwx,o=--- #等价写法1
+chmod ug=rwx,o=---
+```
+
+文件类型
+
+|      |                          |                            | r            | w            | x                |
+| ---- | ------------------------ | -------------------------- | ------------ | ------------ | ---------------- |
+| d    | 目录                     |                            | 读到目录名   | 修改目录名   | 进入该目录的权限 |
+| -    | 文件                     |                            | 读到文件内容 | 修改文件内容 | 执行文件         |
+| l    | 链接文档                 | 类是快捷方式               |              |              |                  |
+| b    | 区块设备档（集中在/dev） | 提供系统随机存取的设备     |              |              |                  |
+| c    | 字符设备档（集中在/dev） | 串行设备接口               |              |              |                  |
+| s    | 资料接口文件socket       |                            |              |              |                  |
+| p    | 数据传输文件             | FIFO解决多程序存取文件问题 |              |              |                  |
+
+在权限的目录下，无权访问的文件，可以执行"目录操作"，即删除，移动文件。就是不能打开访问文件。
+
+### Linux查看进程运行的完整路径方法
+
+
+
+通过[ps](http://lovesoo.org/tag/ps)及[top](http://lovesoo.org/tag/top)命令查看进程信息时，只能查到[相对路径](http://lovesoo.org/tag/相对路径)，查不到的进程的详细信息，如[绝对路径](http://lovesoo.org/tag/绝对路径)等。这时，我们需要通过以下的方法来查看进程的详细信息：
+
+[Linux](http://lovesoo.org/tag/linux)在启动一个进程时，系统会在/[proc](http://lovesoo.org/tag/proc)下创建一个以PID命名的文件夹，在该文件夹下会有我们的进程的信息，其中包括一个名为exe的文件即记录了[绝对路径](http://lovesoo.org/tag/绝对路径)，通过[ll](http://lovesoo.org/tag/ll)或[ls](http://lovesoo.org/tag/ls) –l命令即可查看。
+
+[ll](http://lovesoo.org/tag/ll) /[proc](http://lovesoo.org/tag/proc)/PID
+
+cwd符号链接的是进程运行目录；
+
+exe符号连接就是执行程序的绝对路径；
+
+cmdline就是程序运行时输入的命令行命令；
+
+environ记录了进程运行时的环境变量；
+
+fd目录下是进程打开或使用的文件的符号连接。

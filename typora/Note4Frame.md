@@ -157,6 +157,134 @@ public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter{
 
 ![](/企业微信截图_15872974382275.png)
 
+filter  servlet intercept的构造与注册
+
+``` java
+
+@WebListener
+public class IndexServletContextListener implements ServletContextListener {
+    private static final Logger LOGGER = LoggerFactory.getLogger(IndexServletContextListener.class);
+    public static final String INITIAL_CONTENT = "Content created in servlet Context";
+
+    @Override
+    public void contextInitialized(ServletContextEvent sce) {
+        LOGGER.info("Start to initialize servlet context");
+        ServletContext servletContext = sce.getServletContext();
+        servletContext.setAttribute("content", INITIAL_CONTENT);
+    }
+
+    @Override
+    public void contextDestroyed(ServletContextEvent sce) {
+        LOGGER.info("Destroy servlet context");
+    }
+}
+
+public class IndexHttpServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws IOException {
+        resp.getWriter().println(format("Created by %s", getInitParameter("createdBy")));
+        resp.getWriter().println(format("Created on %s", getInitParameter("createdOn")));
+        resp.getWriter().println(format("Servlet context param: %s",
+                req.getServletContext().getAttribute("content")));
+    }
+}
+
+public class FirstIndexFilter implements Filter {
+    private static final Logger LOGGER = LoggerFactory.getLogger(FirstIndexFilter.class);
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        LOGGER.info("Register a new filter {}", filterConfig.getFilterName());
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
+        LOGGER.info("FirstIndexFilter pre filter the request");
+        String filter = request.getParameter("filter1");
+        if (isEmpty(filter)) {
+            response.getWriter().println("Filtered by firstIndexFilter, " +
+                    "please set request parameter \"filter1\"");
+            return;
+        }
+        chain.doFilter(request, response);
+        LOGGER.info("FirstIndexFilter post filter the response");
+    }
+
+    @Override
+    public void destroy() {
+        LOGGER.info("Destroy filter {}", getClass().getName());
+    }
+}
+
+public class FirstIndexInterceptor implements HandlerInterceptor {
+    private static final Logger LOGGER = LoggerFactory.getLogger(FirstIndexInterceptor.class);
+
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        LOGGER.info("FirstIndexInterceptor pre intercepted the request");
+        String interceptor = request.getParameter("interceptor1");
+        if (isEmpty(interceptor)) {
+            response.getWriter().println("Filtered by FirstIndexFilter, " +
+                    "please set request parameter \"interceptor1\"");
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+        LOGGER.info("FirstIndexInterceptor post intercepted the response");
+    }
+
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        LOGGER.info("FirstIndexInterceptor do something after request completed");
+    }
+}
+
+
+
+
+@Configuration
+public class WebServiceConfig implements WebMvcConfigurer {
+    
+     @Bean // 注册listener
+	public ServletListenerRegistrationBean<MyListener> myServletListener() {
+		ServletListenerRegistrationBean<MyListener> myListener = new 	ServletListenerRegistrationBean<MyListener>();
+		myListener.setListener(new MyListener());
+		return myListener;
+    }
+
+    @Bean // 注册servlet
+    public ServletRegistrationBean dispatcherServlet(){
+        return new ServletRegistrationBean(new CXFServlet(),"/service/*");//发布服务名称
+    }
+    
+    
+@Bean // 注册filter
+	public FilterRegistrationBean myFilter() {
+		FilterRegistrationBean myFilter = new FilterRegistrationBean();
+		myFilter.addUrlPatterns("/*");
+		myFilter.setFilter(new MyFilter());
+		return myFilter;
+	}
+    
+ @Override // 注册intercepter
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new FirstIndexInterceptor()).addPathPatterns("/index/**");
+        registry.addInterceptor(new SecondIndexInterceptor()).addPathPatterns("/index/**");
+        LOGGER.info("Register FirstIndexInterceptor and SecondIndexInterceptor onto InterceptorRegistry");
+    }
+
+}
+
+
+```
+
+
+
 ### AOP
 
 ​	解决“业务”与“功能”的耦合，“功能”比如：登录验证，异常提示，有效期验证。将功能添加到“业务”中，
@@ -563,10 +691,10 @@ class {
 
 // ------------------调用-------------------------------
 @AutoWire(默认是用类名称)
-@Qualify(设定的名称)
+@Qualify(设定的名称) // default by type 
 
 
-@Resource(name = "设定的名称")
+@Resource(name = "设定的名称") // default by name
 
 
 ```
@@ -1108,7 +1236,7 @@ maven命令： mvn package springboot springboot:repackage
 服务器：node001 输入都是node001
 ```
 
-## JavaSE
+## Java8-SE
 
 #### Oject
 
