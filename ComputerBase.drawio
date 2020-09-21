@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-21T13:51:26.148Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="r94KKJq5myC4PSq_WN2N" version="13.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-21T14:00:56.567Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="4sK9PYjQQXDtXepinCMH" version="13.7.3" type="github">
   <diagram id="0KY5EVTdoGLi4_GUMJjV" name="Page-1">
     <mxGraphModel dx="942" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,8 +22,8 @@
         <mxCell id="uO6-Ss8m1tkBBqHpcwp5-3" value="交互设计评审" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uO6-Ss8m1tkBBqHpcwp5-4" value="&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0.84) ; font-family: &amp;#34;pingfang sc&amp;#34; , &amp;#34;hiragino sans gb&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;stheiti&amp;#34; , &amp;#34;wenquanyi micro hei&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;产品需求文档(Product Requirement Document，PRD)&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="200" y="180" width="186" height="30" as="geometry" />
+        <mxCell id="uO6-Ss8m1tkBBqHpcwp5-4" value="&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0.84) ; font-family: &amp;#34;pingfang sc&amp;#34; , &amp;#34;hiragino sans gb&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;stheiti&amp;#34; , &amp;#34;wenquanyi micro hei&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;产品需求文档(Product Requirement Document，PRD)：重要的一环，几乎所有人都会来参与讨论&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uO6-Ss8m1tkBBqHpcwp5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uO6-Ss8m1tkBBqHpcwp5-7" target="uO6-Ss8m1tkBBqHpcwp5-12">
           <mxGeometry relative="1" as="geometry" />
@@ -103,11 +103,11 @@
         <mxCell id="uO6-Ss8m1tkBBqHpcwp5-31" value="发布计划&amp;amp;线上日志&amp;amp;上线" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="580" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uO6-Ss8m1tkBBqHpcwp5-33" value="自动化图形发布/微服务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="266" y="740" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="uO6-Ss8m1tkBBqHpcwp5-39" value="&lt;span&gt;产品第二次验收&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uO6-Ss8m1tkBBqHpcwp5-41" value="自动化图形发布/微服务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="780" width="136" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
