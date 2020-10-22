@@ -1630,7 +1630,7 @@ docker: /usr/bin/docker /etc/docker /usr/libexec/docker /usr/share/man/man1/dock
 # 添加到用户组
 >>$usermod -aG dockerroot lzdong
 # 最后还是socket异常
-# 用添加权限方式，访问scoket
+# 用添加权限方式，访问scoket，但是重起了就是要重新监听这个文件
 >>$ chmod a+rw /var/run/docker.sock
 ```
 
@@ -1664,11 +1664,86 @@ docker: /usr/bin/docker /etc/docker /usr/libexec/docker /usr/share/man/man1/dock
 # 所有容器列表
 ```
 
+阿里云的docker加速
 
+```bash
 
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://btqmwvi3.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 
+```
 
+docker执行
 
+``` bash
+# 搜索3000star 以上的
+>>$ docker search ${programName} --filter=STAR=3000 
+>>$ docker image pull ${imageName}
+>>$ docker image pull ${imageName} tag:${tagVersion}
+>>$ docker container run ${imageName}
+# 删除容器，多个用 空格隔开
+>>$ docker image rm ${imageName}  
+# 删除所有镜像
+>>$ docker rmi f $(docker images -aq)
+
+# 运行
+>> $ docker run ${param} image
+param:
+	--name="name"   容器名字 tomcat01 tomcat02
+	-d              后台运行方式,
+	-it 		   使用交互是运行，进入容器内部查看
+		/bin/bash 进入以bash的方式查看，要退出用exit，但是会停止容器
+		Ctrl + p + q 容器退出不停止执行
+	-p			指定容器端口 -p 8080:8080
+		-p ip:主机端口：容器端口
+		-p 主机端口：容器端口（常用）
+		-p 容器端口
+		
+>>$ docker run -it mysql 
+	>>$mysql
+    
+# 停止
+>> docker container ls #当前运行的容器
+	-a #所有运行过的容器
+## 停止的容器不会消失，会有containerID保留，要删除停止的容器文件
+	
+>> docker ps -a
+>> docker stop ${containerID}
+>> docker start ${containerID}
+>> docker restart ${containerID}
+>> docker kill ${containerID}
+>> docker container rm ${containerID} #删除
+>> docker rm -f $(docker ps -aq) #删除所有
+# 也可以使用docker container run命令的--rm参数，在容器终止运行后自动删除容器文件。
+docker container run --rm -p 8000:3000 -it mysql
+```
+
+docker 下载不同的版本，存在分层下载，可用不同的镜像共享使用文件
+
+一些问题
+
+后台启动
+
+``` bash
+docker run -d centos
+
+# docker ps 发现centos 停止
+
+#常见的坑： docker 容器使用后台运行，没有前台执行服务，那么就会自行关掉，所以nigx，java无法运行，除非执行一个服务程序
+
+```
+
+日志问题
+
+``` bash
+docker logs -f -t -taikl 
+```
 
 
 
