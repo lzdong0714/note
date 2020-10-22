@@ -1,5 +1,5 @@
 ---
-
+SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');
 
 
 
@@ -41,6 +41,10 @@ Stomp：就像HTTP在TCP套接字之上添加了请求-响应模型层一样，S
         7、resources/application.properties（项目的resources目录下）
 
         8、resources/application.yml
+        
+        
+# 加载多个配置文件,系统加载了application.properties application-database.properties  application-dev.properties 三个配置文件
+        spring.profiles.active = dev,database
 ```
 
 ``` yaml
@@ -103,6 +107,25 @@ List类型数据
     property.name.list[1].key_1 = value_1
 	property.name.list[1].key_2 = value_2
 
+```
+
+``` java
+//@PropertySource(value = "classpath:thread.yaml") // 从自定义的配置文件中读取数据
+@ConfigurationProperties(prefix = "thread.pool") // 读取属性对象
+public class ThreadPoolParamConfig {
+    private int corePoolSize;
+
+    private int maxPoolSize;
+    
+    private int keepAliveSeconds;
+   
+}
+
+@Componement
+public class Service{
+    @Value("${drug.ip:47.92.186.194}") // 读取属性值，并给出默认值
+    private String ip; 
+}
 ```
 
 
@@ -895,6 +918,26 @@ dbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&allowMul
 
 ## MySQL
 
+``` bash
+# mysql配置文件
+my.ini
+# 会创建一个data文件夹，里面.err文件包含cmd登陆第一次密码
+mysqld --initialize
+# 启动一个默认名称为mysql的数据服务
+mysqld install 
+# 启动服务进程
+net start mysql
+# 关闭服务进程
+net stop mysql
+
+```
+
+
+
+
+
+
+
 #### 数据库的时间字段更新与自动更新
 
 ``` mysql
@@ -1112,6 +1155,203 @@ END
 
 
 
+### 系统默认库与表
+
+库 ： information_schema ，performance_schema
+
+管理整个服务的表与库
+
+``` mysql
+<!-- 获取 服务下所有的表 -->
+select table_name ,create_time , engine, table_collation, table_comment from information_schema.tables 
+where table_schema = (select database())  
+order by create_time DESC;
+
+
+information_schema.COLUMNS
+
+select column_name, is_nullable, data_type, column_comment, column_key, extra from information_schema.columns 
+where table_name = ${tableName} and table_schema = (select database()) order by ordinal_position 
+```
+
+### 用户管理
+
+``` sql
+
+CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+GRANT privileges ON databasename.tablename TO 'username'@'host'
+DROP USER username;
+SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');
+```
+
+​	版本 8.0.21 单节点 ： mysql-8.0.21-winx64.zip
+
+配置文件my.ini内容 
+
+```ini
+[mysqld]
+# 设置3306端口
+port=3306
+# 设置mysql的安装目录
+basedir=E:\Program Files\MySQL
+# 设置mysql数据库的数据的存放目录
+datadir=E:\Program Files\MySQL\data
+# 允许最大连接数
+max_connections=200
+# 允许连接失败的次数。
+max_connect_errors=10
+# 服务端使用的字符集默认为utf8mb4
+character-set-server=utf8mb4
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+# 默认使用“mysql_native_password”插件认证
+#mysql_native_password
+default_authentication_plugin=mysql_native_password
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8mb4
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port=3306
+default-character-set=utf8mb4
+```
+
+
+
+```ini
+# mysql 启动命令：
+ # 会创建一个data文件夹，里面.err文件包含cmd登陆第一次密码
+mysqld --initialize
+# 启动一个默认名称为mysql的数据服务
+mysqld install 
+ # 将数据服务日志输出前台显示
+mysqld --consolmy
+一般启动服务： net start mysql
+# 修改默认密码（myslq 8 以上）
+alter user 'root'@'localhost' identified by '${newPwd}'
+#重启
+Windows
+
+　　1.点击“开始”->“运行”(快捷键Win+R)。
+
+　　2.启动：输入 net stop mysql
+
+　　3.停止：输入 net start mysql
+# 删除服务，重启服务
+sc query mysql
+sc delete mysql
+mysqld -install
+任务管理器中->"服务项"->启动MySQL
+```
+
+```sql
+授权一个新用户用于开发访问: 
+GRANT ALL ON ${databaseName}.${tables} TO '${userName}'@'${host}';
+flush privileges;
+
+CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+GRANT privileges ON databasename.tablename TO 'username'@'host'
+
+create user 'pacs_united'@'%' IDENTIFIED BY 'psw_pacs_united';
+GRANT SELECT ON yhh_bss.t_pacs_united TO 'pacs_united'@'%';
+flush privileges;
+
+
+
+```
+
+##### 数据备份与恢复
+
+```sh
+# 虚拟shell版的备份脚本 ，然后改装为 .bat 使用的windows脚本
+mysqldump 全量备份（热备份，不用停mysql）会自动的flush binlog（全量之后的增量备份）
+但是binlog不知道什么时候刷出来，所以定时flush binlog 刷出来，保存binlog文本备份
+# 保存数据
+mysqldump  > file.sql 
+mysql flush logs;
+
+# 还原数据
+	#全量还原
+	> mysql -uroot -phntyhnty < file.sql
+	# 增量还原 如果是shell直接 $ mysqlbinlog mysql-bin.0000xx | mysql -u${usr} -p${pwd} ${db_name}
+	> mysqlbinlog XXX-bin.0000XX > XXX-bin.sql
+	> mysql -uroot -phntyhnty < XXX-bin.sql 
+	> mysqlbinlog -v XXX-bin.0000XX > XXX.txt
+		#从 XXX.txt 文件中找到误操作，以及对应的开始,结束 编号 
+			mysqlbinlog XXX-bin.0000XX --stop-position 开始编号 >  XXX-bin-start.sql
+			mysqlbinlog XXX-bin.0000XX --stop-position 结束编号 >  XXX-bin-end.sql
+		# 然后依次执行两个SQL，一定要按顺序执行
+		# 也可以用sql语句直接查看binlog的文件，然后找到误操作事件的开始与结束
+		
+```
+
+win10下的脚本
+
+全量备份bat脚本
+
+```bat
+rem 按时间分开保存
+
+rem @echo off
+set THISDATE=%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%
+set DB=yhh_bss
+set fileName=%DB%%THISDATE%weekly_backup
+mysqldump -uroot -phntyhnty -B --databases yhh_bss  -F -R --master-data=2 --events --single-transaction > ./%fileName%.sql
+
+rem 覆盖保存
+
+rem @echo off
+rem set DB=yhh_bss
+rem set fileName=%DB%weekly_backup
+rem mysqldump -uroot -phntyhnty -B --databases yhh_bss  -F -R --master-data=2 --events --single-transaction > ./%fileName%.sql
+rem pause
+
+
+```
+
+
+
+增量备份脚本 一个可以批量执行SQL或SQL文本的脚本样例（文本名处理太麻烦，不搞了）
+
+```bat
+@echo off
+for %%i in (./daily_backup.sql) do (
+    echo execute %%i
+    mysql -uroot -phntyhnty < %%i
+)
+rem 应当在做一个追加复制脚本，把flush出来的日志文件保存到本地或者其他服务器，并记录时间到文件名中
+echo successd
+```
+
+
+
+daily_backup.sql 内容
+
+```sql
+flush logs;
+```
+
+应当在做一个追加复制脚本，
+
+剩下的就是用win定时任务设定执行脚本时间
+
+
+
+```ini
+log-bin = /xxx/xxx/mysql_bin #binlog日志文件,以mysql_bin开头，六个数字结尾的文件：mysql_bin.000001，并且会将文件存储在相应的xxx/xxx路径下，如果只配置mysql_bin的话默认在C:\ProgramData\MySQL\MySQL Server 5.7\Data下；
+binlog_format = ROW #binlog日志格式，默认为STATEMENT：每一条SQL语句都会被记录；ROW：仅记录哪条数据被修改并且修改成什么样子，是binlog开启并且能恢复数据的关键；
+expire_logs_days= 7 #binlog过期清理时间；
+max_binlog_size = 100m #binlog每个日志文件大小；
+binlog_cache_size = 4m #binlog缓存大小；
+max_binlog_cache_size = 512m #最大binlog缓存大小
+```
+
+
+
+
+
+
+
 ## MAVEN
 
 [](https://www.runoob.com/maven/maven-tutorial.html) // meaven 的基本配置说明
@@ -1128,6 +1368,9 @@ mvn install:install-file -Dfile=hnty-cloud-common-security-0.5.0-SNAPSHOT.jar -D
 mvn install:install-file -Dfile=hnty-cloud-common-sys-0.5.0-SNAPSHOT.jar -DgroupId=com.hnty.cloud -DartifactId=hnty-cloud-common-sys -Dversion=0.5.0-SNAPSHOT -Dpackaging=jar
 
 mvn install:install-file -Dfile=hnty-cloud-common-security-0.5.0-SNAPSHOT.jar -DgroupId=com.hnty.cloud -DartifactId=hnty-cloud-common-security -Dversion=0.5.0-SNAPSHOT -Dpackaging=jar
+
+mvn install:install-file -Dfile=eladmin-common-2.5.jar -DgroupId=me.zhengjie -DartifactId=eladmin -Dversion=2.5 -Dpackaging=jar
+
 ```
 
 ``` xml
@@ -1264,12 +1507,12 @@ git diff #查看缓存的改动
 git status
 git rm  ${file}#删除文件
 git rm --cache  ${fileName}#从git同步清单中去除
-
+git 本地分支相互merge， 
 ```
 
 
 
-### GitHub
+
 
 ### GitLab
 
@@ -1330,54 +1573,96 @@ WARNING: Adding a user to the "docker" group will grant the ability to run
 
 ```
 
-``` sh
+## RabbitMQ
 
 
-hss_his^H^H^[[3~^[[D^[[C^[[1;5D^[[1;5D^[[C^FF^[[3~^[[D^[[D^[[Cjj^
+
+``` ini
+# sbin 目录下执行 , 用户名不能为中文不然erl环境不能支持
+# 安装延时队列插件
+rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+# 启动插件管理，启动后会看到服务中有延时队列的插件存在
+rabbitmq-plugins enable rabbitmq_management
+# 启动server
+点击 rabbitserver.bat或者开始菜单启动
 ```
 
 
 
+### Linux 
 
+``` bash
+# 新建user的指定文件路径
+useradd -d /home/user  -m user 
 
-``` sh
+# 用root查询已安装的软件路径
+# 根据安装的方式的不同，
+# 可以通过 yum list installed |grep ${software}
+#  		  rpm -qa
+# 可以通过 which ${software}
+#		 whereis ${software}
+#		find / -name *.rpm
+#        find /home/user -name '*.txt'
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# whereis docker
+#		执行路径		配置路径		安装路径			默认站点目录
+docker: /usr/bin/docker /etc/docker /usr/libexec/docker /usr/share/man/man1/docker.1.gz
+# 但是docker是按照socket嵌套字去绑定，而非TCP端口，所以用sudo命令可以执行 
+# 否则执行，将所有的变为可读（-R 递归的所有文件可读） chmod -R 755 ${安装路径} 
+# 执行,授权给用户可执行 -R 是可执行 chmon -R ${usr} ${安装路径}  
+# 但是CentOS的sudo 需要修改sudoer文件配置
+# 修改方式
+>>$cd /etc/
+>>$chmod u+w sudoers
+>>vi sudoers
+#编辑sudoer文件， :q! 不保存退出  :wq 保存退出
+# 在 root ALL = (ALL)       ALL 下
+# 加 ${usr} ALL = (ALL)      ALL
+#保存退出
 
-root@iZ8vbgiaul3ujqlibwm521Z:~# docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
-Unable to find image 'gitlab/gitlab-runner:latest' locally
-latest: Pulling from gitlab/gitlab-runner
-5bed26d33875: Pull complete 
-f11b29a9c730: Pull complete 
-930bda195c84: Pull complete 
-78bf9a5ad49e: Pull complete 
-3d067b4c5be4: Pull complete 
-834f0c22adc5: Pull complete 
-070872dc265e: Pull complete 
-4fc26521568a: Pull complete 
-5bbe5d326786: Pull complete 
-Digest: sha256:7985ff7558b0c7f49d56c1c7ee8c2343b687b6a88b05a7b3f26ebde206cc5e30
-Status: Downloaded newer image for gitlab/gitlab-runner:latest
-Runtime platform                                    arch=amd64 os=linux pid=6 revision=ce065b93 version=12.10.1
-Running in system-mode.                            
-                                                   
-Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
-https://gitlab.hntyhb.com.cn/
-Please enter the gitlab-ci token for this runner:
-yQQ4pUBjQd361Mi7hi1Y
-Please enter the gitlab-ci description for this runner:
-[dd31d5272e95]: hss_his^H^H^[[3~^[[D^[[C^[[1;5D^[[1;5D^[[C^FF^[[3~^[[D^[[D^[[Cjj^HPlease enter the gitlab-ci tags for this runner (comma separated):
-hnty
-Registering runner... succeeded                     runner=yQQ4pUBj
-Please enter the executor: docker, shell, virtualbox, kubernetes, custom, docker-ssh, parallels, ssh, docker+machine, docker-ssh+machine:
-docker
-Please enter the default Docker image (e.g. ruby:2.6):
-latest
-Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded! 
-
+# 回到只读状态
+>>$chmod u-w sudoers
+# 然后 
+[lzdong]>>$sudo docker container list
+# 会要求输入密码执行命令，不方便，所以将 lzdong 赋予与root一样的权限不用每次都输入密码
+# 于是用户组权限添加
+>>$cat /etc/group | grep docker
+# 发现存在dockerroot 用户组
+# 添加到用户组
+>>$usermod -aG dockerroot lzdong
+# 最后还是socket异常
+# 用添加权限方式，访问scoket
+>>$ chmod a+rw /var/run/docker.sock
 ```
 
 
 
+## Docker
 
+虚拟容器，与vmare相似，可以用来装虚拟机，用来管理各个组件与app。
+
+1 每个组件的启动，有自己的配置文件，以及自己的插件，如何正确的启动各个组件与服务？？？
+
+2 如何执行镜像中的组件的 命令与功能？？？ （在linux和window下通过 ，配置环境变量 shell 或者cmd执行命令，在dockers下如何进入到各个容器中执行）
+
+3 docker自身的管理与监控，docker的ip映射等问题。
+
+``` sh
+# docker 基本命令
+# 启动
+>>$service docker start
+>>$sudo systemctl start docker
+>>$sudo systemctl restart docker
+# 关闭
+>>$
+
+# 镜像列表
+>>$docker images list
+
+# 运行的容器列表
+>>$docker container list
+
+# 所有容器列表
+```
 
 
 
