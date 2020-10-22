@@ -1742,10 +1742,37 @@ docker run -d centos
 日志问题
 
 ``` bash
-docker logs -f -t -taikl 
+docker logs -f -t -tail ${containerID} #没有容器日志
+
+-tf #显示容器
+docker logs -tf --tail 10 ${containerID} #查看容器执行的后面100条日志
+
+docker ps ${containerID} 
+docker top ${containerID} # 查看docker中的进程信息
+docker inspect ${containerID} #查看docker中的数据元信息
 ```
 
+进入正在运行的容器中修改配置
 
+``` bash
+>>$ docker [command] --help # 命令帮助
+
+# 进入容器后开启一个新的终端，开启新线程
+>>$ docker exec -it ${containerID} /bin/bash
+ 
+ # 进入正在执行的终端
+>>$ docker attach  ${containerID} 
+
+```
+
+从容器内拷贝文件到主机上
+
+``` sh
+# 拷贝，不用管容器是否运行
+>>$ docker cp ${containerID}:/dir/file  /dir
+
+# 以后使用 -v （volume 技术）同步容器与主机的文件
+```
 
 
 
