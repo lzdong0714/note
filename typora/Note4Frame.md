@@ -1656,12 +1656,17 @@ docker: /usr/bin/docker /etc/docker /usr/libexec/docker /usr/share/man/man1/dock
 >>$
 
 # 镜像列表
->>$docker images list
-
+>>$docker images 
+>>$docker search ${program}
 # 运行的容器列表
 >>$docker container list
 
 # 所有容器列表
+>>$docker container list -a
+
+# 进入到容器中的环境，以bash的形式
+docker exec -it b0c3db2eff77 /bin/bash
+# 这样就可以修改配置文件
 ```
 
 
