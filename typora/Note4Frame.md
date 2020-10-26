@@ -1262,6 +1262,12 @@ flush privileges;
 
 ##### 数据备份与恢复
 
+逻辑备份 和 物理备份：
+
+逻辑备份：输出为MySQL可以解析的格式中，XX.sql XX.csv ，就是navicat的导出功能
+
+物理备份：直接复制原始文件 原始的  .idb 文件， binlog 文件
+
 ```sh
 # 虚拟shell版的备份脚本 ，然后改装为 .bat 使用的windows脚本
 mysqldump 全量备份（热备份，不用停mysql）会自动的flush binlog（全量之后的增量备份）
@@ -1346,11 +1352,112 @@ binlog_cache_size = 4m #binlog缓存大小；
 max_binlog_cache_size = 512m #最大binlog缓存大小
 ```
 
+##### mysql主从配置
+
+``` ini
+# 主节点 XXX.21.XX.184
+# 从节点 XXX.21.XX.186
+
+# 会相互授权访问权限与地位 ， 所以要建立好关键的 'user'@'host'
+# 那么主节点的 JavaApp使用用户是 'dev'@'%'
+# 从节点的用户是 'dev'@'%'fl
+# 那么尝试：主节点
+>>$mysql > create user 'replcate'@'172.21.44.186' identified by 'hntyhnty';
+>>$mysql > alter user 'replcate'@'172.21.44.186' identified with mysql_native_password by 'hntyhnty';
+>>$mysql> grant replcation slave on yhh_bss.* to 'replcate'@'172.21.44.186';
+>>$mysql> flush privileges;
+# 以上尝试不好，带IP的host 换为 %
+>>$mysql > create user 'replcate'@'%' identified by 'XXXX';
+>>$mysql > alter user 'replcate'@'%' identified with mysql_native_password by 'XXXX';
+# 这里是grant replcation slave on 是全局命令，不能指定特定的数据库
+>>$mysql> grant replcation slave on *.* to 'replcate'@'XXX.21.XX.186'; 
+
+
+# 通过执行sql 
+>>$mysql > show master status;
+mysql> show master status;
++------------------+----------+--------------+------------------+-------------------+
+| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
++------------------+----------+--------------+------------------+-------------------+
+| mysql-bin.000003 |     1173 | localtest    |                  |                   |
++------------------+----------+--------------+------------------+-------------------+
+可以指找到执行MASTER_LOG_FILE 和 MASTER_LOG_POS的值
+##### ==============主节点配置===================
+# config for setting master-slave doc in delay db test
+#主数据库端ID号
+server_id=1           
+#开启二进制日志                  
+log-bin = mysql-bin    
+#需要复制的数据库名，如果复制多个数据库，重复设置这个选项即可                  
+binlog-do-db=XXX
+binlog_format=ROW      
+#将从服务器从主服务器收到的更新记入到从服务器自己的二进制日志文件中                 
+log-slave-updates=1                        
+#控制binlog的写入频率。每执行多少次事务写入一次(这个参数性能消耗很大，但可减小MySQL崩溃造成的损失) 
+sync_binlog=100                    
+#这个参数一般用在主主同步中，用来错开自增值, 防止键值冲突
+#auto_increment_offset=1           
+#这个参数一般用在主主同步中，用来错开自增值, 防止键值冲突
+#auto_increment_increment=1            
+#二进制日志自动删除的天数，默认值为0,表示“没有自动删除”，启动时和二进制日志循环时可能删除  
+# expire_logs_days=7                    
+#将函数复制到slave  
+log_bin_trust_function_creators=1
+
+##### ==============从节点配置===================
+[mysqld]
+server_id = 2
+log-bin = mysql-bin
+log-slave-updates=1
+sync_binlog = 0
+#log buffer将每秒一次地写入log file中，并且log file的flush(刷到磁盘)操作同时进行。该模式下在事务提交的时候，不会主动触发写入磁盘的操作
+innodb_flush_log_at_trx_commit = 0        
+#指定slave要复制哪个库
+replicate-do-db = XXX         
+#MySQL主从复制的时候，当Master和Slave之间的网络中断，但是Master和Slave无法察觉的情况下（比如防火墙或者路由问题）。Slave会等待slave_net_timeout设置的秒数后，才能认为网络出现故障，然后才会重连并且追赶这段时间主库的数据
+slave-net-timeout = 60                    
+log_bin_trust_function_creators = 1
+read-only=1
+
+# 修改配置文件重启mysql
+
+# 执行mysql
+从节点配置文件
+>>$mysql> CHAGE MASTER TO 
+	> MASTER_HOST='XXX.21.XXX.184',
+	> MASTER_USER='XXX',
+	> MASTER_LOG_FILE='mysql-bin.000000X',
+	> MASTER_LOG_POS=525;
+>>$mysql > SALVE START;
+>>$mysql > show slave state\G;
+
+## 以下俩个字段都是yes那么是成功的，其他的No, connecting 都是失败
+SLAVE_IO_Running:yes 
+SLAVE_SQL_Running:yes
+
+
+## 剩下的命令就是将 从库改为延时：
+
+>>$mysql > stop slave;
+# 按秒计算4小时，可以试试直接执行这一句
+>>$mysql > change master to master_delay= 144000
+>>$mysql> start slave;
+# 查看结果
+mysql> show slave status/G;
+# SQL_DELAY:144000
+# SQL_Remaining_Delay:120023
+
+# 停止延时
+mysql> stop slave;
+mysql> CHANGE MASTER TO MASTER_DELAY = 0;
+mysql> start slave;
+```
+
+##### mysql主从恢复
 
 
 
-
-
+## 查看状态
 
 ## MAVEN
 
@@ -1634,6 +1741,23 @@ docker: /usr/bin/docker /etc/docker /usr/libexec/docker /usr/share/man/man1/dock
 >>$ chmod a+rw /var/run/docker.sock
 ```
 
+软件下载与安装
+
+``` bash
+# wget 通过网络连接下载软件 wget -O wordpress.zip http://www.centos.zb/download.php?id=1080
+# 下载一个软件并且保存为wordpress.zip的文件名
+wget -b ${url}  # 后台下载
+tail -f wget-log # 查看下载日志
+
+
+# curl 可以通过用户密码的输入下载
+
+# rpm是 rethat 的软件安装统一管理
+# yum是基于 rpm的安装统一管理
+
+
+```
+
 
 
 ## Docker
@@ -1690,7 +1814,7 @@ docker执行
 # 搜索3000star 以上的
 >>$ docker search ${programName} --filter=STAR=3000 
 >>$ docker image pull ${imageName}
->>$ docker image pull ${imageName} tag:${tagVersion}
+>>$ docker image pull ${imageName}:${tagVersion}
 >>$ docker container run ${imageName}
 # 删除容器，多个用 空格隔开
 >>$ docker image rm ${imageName}  
