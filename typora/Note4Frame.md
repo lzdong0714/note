@@ -1874,6 +1874,12 @@ docker run -d centos
 
 #常见的坑： docker 容器使用后台运行，没有前台执行服务，那么就会自行关掉，所以nigx，java无法运行，除非执行一个服务程序
 
+docker run -d --name tomcat01 -p 8880:8080 tomcat
+# 访问是 404因为没有加载 webapp
+# 从tomcat镜像中复制 webapp.dist 进入 webapp
+docker exec -it tomcat01 /bin/bash
+cp -r webapps.dist/* webapps
+那么需要将 外部的webapps的文件加载到容器中，那么将可以制作一个新的镜像
 ```
 
 日志问题
@@ -1907,9 +1913,79 @@ docker inspect ${containerID} #查看docker中的数据元信息
 ``` sh
 # 拷贝，不用管容器是否运行
 >>$ docker cp ${containerID}:/dir/file  /dir
+>>$ docker cp /dir ${containerID}:/dir/file
+# 复制运行中额tomcat到当前目录下（不需要 -r 递归参数）
+docker cp  ce5349044d98:/usr/local/tomcat/webapps.dist ./webapp
+
+实际是从docker镜像文件中cp过来
+/var/lib/docker/overlay2/9a6e4aad05b8e2008c0f52ab345814d14a89d2c0f882327bb2a7fe10e3b2cfba/merged/usr/local/tomcat/webapps.dist/
 
 # 以后使用 -v （volume 技术）同步容器与主机的文件
+
+>>$ docker stats #查看docker的CUP， 内存暂用
+>>$ docker -e  # 添加环境配置
+>>$ dokcer run -d --name elasticsearch -p 9200:9200 -e "discovery.type=single-node" -e ES_JAVA_OPTS="-Xms64m -Xmx521m"
 ```
+
+ docker获取：
+
+​	远程下载
+
+​	复制拷贝
+
+​	制作一个docker
+
+dockers有一个联合文件系统UnionFS，镜像进行叠加，
+
+bootfs(boot file system)主要包含bootload和kernel
+
+docker 的镜像都是只读的，启动容器时，一个新的可写成添加到容器顶部，这一层就是我们说的容器。
+
+将我们容器一起打包变为一个镜像，成为我提交制作的docker
+
+``` sh
+
+
+>>$ docker commit -a='lzdong' -m='add webapps' ce5349044d98  tomcat_my:1.0
+将containerID 为ce5349044d98的容器制作为镜像 tomcat_my:1.0
+
+```
+
+#### dockers数据卷
+
+将dockers 容器中运行中的程序数据挂载到linux中，比如mysql的容器，需要将数据路径挂载到linux文件目录下。当docker停止，或者容器停止运行，那么运行的数据就丢失了，这是在数据库是不可用的，所以必然要挂载出来
+
+容器间也可以数据共享。
+
+``` shell
+# 方式1 使用 -v 主机目录：容器目录 命令来挂载
+# 将 docker 中centos的 /home 目录挂载到 服务器下的 /home/test 目录下
+>>$ docker run -it -v /home/test /home centos
+#实际是将 容器文件 同步挂载到了 设定的文件
+
+# 匿名挂载，只指定了容器文件 ，没有指定服务器文件
+>>$ docker run -it -v /ect/nginx nigx
+
+# 用volunme查看卷
+>>$ docker volume ls
+>> local xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# 具名挂载
+>> $ docker run -d --name nginx01 -v ${volumeName}:/ect/nginx nginx
+>> $ docker volumn ls
+>> local ${volumeName}
+
+
+# 目录的文件都在服务器的
+/var/lib/docker/volume
+## 只读 可读可写
+docker run -it -v /ect/nginx:ro nigx
+docker run -it -v /ect/nginx:rw nigx
+
+
+```
+
+
 
 
 
