@@ -1,11 +1,10 @@
----
+
 SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');
 
 
 
 
 typora-root-url: Pic4Frame
----
 
 
 
@@ -1207,6 +1206,8 @@ default-storage-engine=INNODB
 # 默认使用“mysql_native_password”插件认证
 #mysql_native_password
 default_authentication_plugin=mysql_native_password
+# mysql_mode 设定，解决版本历史问题
+sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 [mysql]
 # 设置mysql客户端默认字符集
 default-character-set=utf8mb4
@@ -1443,7 +1444,7 @@ SLAVE_SQL_Running:yes
 >>$mysql > change master to master_delay= 144000
 >>$mysql> start slave;
 # 查看结果
-mysql> show slave status/G;
+mysql> show slave status\G;
 # SQL_DELAY:144000
 # SQL_Remaining_Delay:120023
 
@@ -1451,6 +1452,13 @@ mysql> show slave status/G;
 mysql> stop slave;
 mysql> CHANGE MASTER TO MASTER_DELAY = 0;
 mysql> start slave;
+
+
+### 问题排查，
+## 在
+mysql> show slave status\G;
+## 给出问题后，比如结构不同步，那么重新修改从库数据表结构，以及相应的数据内容，
+## 不停的直接 stop slave 和 start slave就可以了，从库会自动的追赶复制数据
 ```
 
 ##### mysql主从恢复
