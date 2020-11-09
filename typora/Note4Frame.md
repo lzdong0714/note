@@ -2178,11 +2178,74 @@ docker run --name tomcat-net-01 --net mynet ${tomcatImagesName}
 
 // 之后就是运维工作了，不要浪费主要经历，最多编写Dockerfile,部署到docker中
 
-Docker Compose
+### Docker Compose
 
-Dockers Swarm  |  k8s
+单独的容器没有意义，只有集群的服务编排才会有docker有用.
+
+dockerCompose是一个官方的开源项目，需要安装，可以运行包含多个服务service（数据服务，微服务）组成的项目(project),但是还是单个docker启动多个服务，所以要跨服务器的编排服务。
+
+``` shell
+# 官方下载地址
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# 国内加速下载镜像地址
+sudo curl -L "https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+>>$ cd /usr/local/bin/
+>>$ chmod +x docker-compose
+
+
+```
+
+官方启动用例https://docs.docker.com/compose/gettingstarted/
+
+启动之后有内部访问
+
+``` shell
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# curl localhost:5000
+Hello World! I have been seen 1 times.
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# curl localhost:5000
+Hello World! I have been seen 2 times.
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# curl localhost:5000
+Hello World! I have been seen 3 times.
+
+# 查看服务
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# docker network ls
+NETWORK ID          NAME                  DRIVER              SCOPE
+c187e6614d1f        bridge                bridge              local
+d34253cf09ad        composetest_default   bridge              local
+ff577852f263        host                  host                local
+aca6b11d6cea        none                  null                local
+
+```
+
+
+
+
+
+启动docker-compose会给启动的service默认建立一个docker的网络。
+
+``` yml
+## ----docker-compose的编写 3层-------------
+version: ${版本}
+services:
+	
+```
+
+
+
+### DockerSwarm
+
+
 
 Jenkeins CI/CD
+
+
+
+#### SpringC
+
+
+
+
 
  
 
