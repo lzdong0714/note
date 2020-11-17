@@ -1286,7 +1286,7 @@ mysql flush logs;
 	> mysqlbinlog -v XXX-bin.0000XX > XXX.txt
 		#从 XXX.txt 文件中找到误操作，以及对应的开始,结束 编号 
 			mysqlbinlog XXX-bin.0000XX --stop-position 开始编号 >  XXX-bin-start.sql
-			mysqlbinlog XXX-bin.0000XX --stop-position 结束编号 >  XXX-bin-end.sql
+			mysqlbinlog XXX-bin.0000XX --start-position 结束编号 >  XXX-bin-end.sql
 		# 然后依次执行两个SQL，一定要按顺序执行
 		# 也可以用sql语句直接查看binlog的文件，然后找到误操作事件的开始与结束
 		
@@ -1441,7 +1441,7 @@ SLAVE_SQL_Running:yes
 
 >>$mysql > stop slave;
 # 按秒计算4小时，可以试试直接执行这一句
->>$mysql > change master to master_delay= 144000
+>>$mysql > change master to master_delay= 14400
 >>$mysql> start slave;
 # 查看结果
 mysql> show slave status\G;
@@ -1452,7 +1452,6 @@ mysql> show slave status\G;
 mysql> stop slave;
 mysql> CHANGE MASTER TO MASTER_DELAY = 0;
 mysql> start slave;
-
 
 ### 问题排查，
 ## 在
@@ -1982,7 +1981,16 @@ docker 的镜像都是只读的，启动容器时，一个新的可写成添加�
 docker run -it -v /ect/nginx:ro nigx
 docker run -it -v /ect/nginx:rw nigx
 
+### docker 内服务同时占用同一个端口的问题：
+t
 
+docker run --name myjenkins -p 8001:8080 -p 8002:50000 -v /home/lzdong/jenkins:/var/jenkins_home jenkins
+/var/jenkins_home/secrets/initialAdminPassword
+c8436e7bc05b4818b36a1663f60eb6cb
+
+admin: lzdong
+pwd: #lzdong#p
+fullname: lzdong0714
 ```
 
 
