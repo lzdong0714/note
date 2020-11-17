@@ -1959,7 +1959,7 @@ docker 的镜像都是只读的，启动容器时，一个新的可写成添加�
 ``` shell
 # 方式1 使用 -v 主机目录：容器目录 命令来挂载
 # 将 docker 中centos的 /home 目录挂载到 服务器下的 /home/test 目录下
->>$ docker run -it -v /home/test /home centos
+>>$ docker run -it -v /home/test home/centos
 #实际是将 容器文件 同步挂载到了 设定的文件
 
 # 匿名挂载，只指定了容器文件 ，没有指定服务器文件
@@ -1994,6 +1994,276 @@ fullname: lzdong0714
 ```
 
 
+
+#### dockerfile
+
+``` dockerfile
+# 生成镜像的通过脚本 mydockfile
+# dockerfile 的例子
+# 基于某一个镜像${imagesID}
+FROM centos
+# 镜像中自定义的匿名挂载数据卷 ，有对应的外部同步目录，
+VOLUME ["volume01", "volume02"]
+# 构建后执行命令
+CMD "------end--------"
+CMD /bin/bash
+
+```
+
+
+
+docker 命令build执行dockerfile，生成镜像
+
+``` shell
+docker build 
+>>$ docker
+# 末尾加 . 表示加载在当前文件夹下
+docker build -f ${dockerFileName} -t ${imageName:target} .
+docker build -f  mydockfile -t centos/myOS:1.0 . 
+```
+
+
+
+
+
+数据卷挂载出来，可以进行服务见的数据同步
+
+``` shell
+# mysql 同步数据
+# 运行一个新容器${docker03}，挂载到一个已有的容器${docker01} 基于 镜像 ${image:tag}
+docker run -it --name docker02 --volume-from docker01 centos/myOS:1.0
+
+docker run -it --name docker03 --volume-from docker01 centos/myOS:1.0
+ 
+# 那么docker01 docker02 docker03 的文件是复制共享的，即docker02， docker03 复制docker01的volume01,volume02到docker02，docker03下，并且文件之间是同步的
+```
+
+
+
+docker 共享
+
+1  编写一个dockerfile
+
+2 docker build 构建一个镜像
+
+3 docker run 运行一个镜像
+
+4 docker push (dockerhub, 阿里dockers镜像库，或者自己的库？？)
+
+``` shell
+ FROM #基础镜像,
+ MAINTAINER  #镜像维护人 ${createrName}<${email}>
+ RUN  # 执行
+ ADD  # 步骤，添加其他依赖镜像，
+ WORKDIR # 工作目录 ，默认工作目录
+ VOLUME  # 挂载卷
+ EXPOSE  # 指定暴露端口，仔细编排，避免端口冲突
+ CMD     # 指定容器启动时候的运行命令，只有最后一条CMD命令执行
+ ENTRYPOINT # 追加的方式添加命令
+ ONBULID  # 当构建一个被继承的 dockerfile，这个时候运行
+ COPY    # 类似 add
+ ENV     # 构建的时候设定环境变量
+
+```
+
+
+
+``` dockerfile
+FROM centos
+MAINTAINER lzdong<282139155@qq.com>
+
+ENV MYPATH /usr/local # 配置变量
+WORKDIR $MYPATH 	  # 指定运行环境
+
+RUN yum -y install vim
+RUN yum -y install net-tools
+
+EXPOSE 80
+
+CMD echo $MYPATH
+CMD echo "------end-------"
+CMD /bin/bash
+```
+
+
+
+使用官方命名 文件为 "Dockerfile" ，那么docker builder 不用使用 -f 指定文件名称 
+
+``` dockerfile
+FROM centos
+MAINTIANER lzdong<282139155@qq.com>
+COPY readme.txt /usr/local/readme.txt
+ADD jdk-8ull-linux-x64.tar.gz /usr/local/
+ADD apache-tomcat-9.0.22.tar.gz /usr/local/
+RUN yum -y install vim
+ENV MYPATH /usr/local
+WORKDIR $MYPATH
+
+ENV JAVA_HOME /usr/local/jdk1.8.0_11
+ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tool.jar
+ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.22
+ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.22
+ENV PATH $PATH:$JAVA_HOME/bin:$CATALINA_HOME/lib/:$CATALINA_HOME/bin
+
+EXPOSE 8080
+CMD /usr/local/apache-tomcat-9.0.22/bin/startup.sh && tali -F /usr/local/apache-tomcat-9.0.22/bin/logs/catatlina.out
+
+```
+
+
+
+Docker 网络
+
+使用 evth-pair技术，桥接模式，使用协议相连接。使网卡成对出现。
+
+``` shell
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:16:3e:10:59:b4 brd ff:ff:ff:ff:ff:ff
+    inet 172.26.205.208/20 brd 172.26.207.255 scope global dynamic eth0
+       valid_lft 314416761sec preferred_lft 314416761sec
+    inet6 fe80::216:3eff:fe10:59b4/64 scope link 
+       valid_lft forever preferred_lft forever
+3: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ca:13:94:f4 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:caff:fe13:94f4/64 scope link 
+       valid_lft forever preferred_lft forever
+11: veth583d913@if10: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:89:d9:dc:cb:08 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::b089:d9ff:fedc:cb08/64 scope link 
+       valid_lft forever preferred_lft forever
+19: veth5f6dc35@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a6:fa:03:53:6d:7a brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::a4fa:3ff:fe53:6d7a/64 scope link 
+```
+
+
+
+``` sh
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# docker exec -it myjenkins ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+18: eth0@if19: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:11:00:03 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.17.0.3/16 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:acff:fe11:3/64 scope link 
+       valid_lft forever preferred_lft forever
+
+```
+
+
+
+
+
+``` shell
+# docker 网络查询
+docker network ls
+
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+c187e6614d1f        bridge              bridge              local
+ff577852f263        host                host                local
+aca6b11d6cea        none                null                local
+
+# 状态呢模式
+bridge: 桥接模式，
+none: 不适用模式
+host： 宿主机
+
+# 创建一个docker网络
+docker network create --driver bridge --subnet 192.168.0.0/16 --gateway 192.168.0.1 mynet
+
+#将容器启动到自己的网络中
+docker run --name tomcat-net-01 --net mynet ${tomcatImagesName}
+```
+
+这里就可以编排集群在同意docker中，路由6个端口，启动6个redis容器，配置docker内的集群。
+
+// 之后就是运维工作了，不要浪费主要经历，最多编写Dockerfile,部署到docker中
+
+### Docker Compose
+
+单独的容器没有意义，只有集群的服务编排才会有docker有用.
+
+dockerCompose是一个官方的开源项目，需要安装，可以运行包含多个服务service（数据服务，微服务）组成的项目(project),但是还是单个docker启动多个服务，所以要跨服务器的编排服务。
+
+``` shell
+# 官方下载地址
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# 国内加速下载镜像地址
+sudo curl -L "https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+>>$ cd /usr/local/bin/
+>>$ chmod +x docker-compose
+
+
+```
+
+官方启动用例https://docs.docker.com/compose/gettingstarted/
+
+启动之后有内部访问
+
+``` shell
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# curl localhost:5000
+Hello World! I have been seen 1 times.
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# curl localhost:5000
+Hello World! I have been seen 2 times.
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# curl localhost:5000
+Hello World! I have been seen 3 times.
+
+# 查看服务
+[root@iZbp19tbls4i7mqa3ibjxtZ ~]# docker network ls
+NETWORK ID          NAME                  DRIVER              SCOPE
+c187e6614d1f        bridge                bridge              local
+d34253cf09ad        composetest_default   bridge              local
+ff577852f263        host                  host                local
+aca6b11d6cea        none                  null                local
+
+```
+
+
+
+
+
+启动docker-compose会给启动的service默认建立一个docker的网络。
+
+``` yml
+## ----docker-compose的编写 3层-------------
+version: ${版本}
+services:
+	
+```
+
+
+
+### DockerSwarm
+
+
+
+Jenkeins CI/CD
+
+
+
+#### SpringC
+
+
+
+
+
+ 
 
 
 
