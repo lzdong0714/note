@@ -913,6 +913,26 @@ dbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&allowMul
 4   </delete>
 ```
 
+## JavaWebService
+
+``` ini
+wsimport -encoding utf-8 -keep -s D:\temp -p com.lawyer.user -verbose http://服务地址?wsdl
+-encoding : 指定编码格式
+-keep：是否生成java源文件
+-d：指定.class文件的输出目录
+-s：指定.java文件的输出目录
+-p：定义生成类的包名，不定义的话有默认包名
+-verbose：在控制台显示输出信息
+-b：指定jaxws/jaxb绑定文件或额外的schemas
+-extension：使用扩展来支持SOAP1.2
+
+# 生成之后调用 service, serviceSoap包含所有的接口方法，调用后有对应的封装对象，直接调用即可
+CMLABSReportWebService service = new CMLABSReportWebService();
+CMLABSReportWebServiceSoap serviceSoap = service.getCMLABSReportWebServiceSoap();
+```
+
+
+
 
 
 ## MySQL
