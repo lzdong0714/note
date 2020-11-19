@@ -1484,7 +1484,157 @@ mysql> show slave status\G;
 
 
 
-## 查看状态
+#### 乐观锁与悲观锁
+
+悲观锁：无论读写都加锁，保证读的正确行
+
+乐观锁：读写均不加锁，写的时候依据读取时的版本号，确认写的成败，写的时候依然时最新版本，那么写入，如果版本被人更新，那么写入失败。
+
+## Redis
+
+``` ini
+#CMD
+redis-server.exe redis.windows.conf
+# CMD
+redis-server --service-install redis.windows.conf
+netstart redis
+```
+
+``` ini
+E:\Program Files\redis3.0.504
+# CMD
+redis-cli.exe
+```
+
+``` sh
+# redis command
+# 队列任务 
+$redis MULTI
+$redis DECRBY key 1
+$redis INCRBY key 2
+$redis EXEC
+
+# 乐观锁模拟
+$redis WATCH key
+$redis DECRBY key 1
+$redis INCRBY key 2
+$redis EXEC
+# 如果执行失败，那么解锁，重新加载
+$redis UNWATCH
+$reids watch key
+$redis multi 
+$redis ...
+$redis exec
+```
+
+**redis** 配置文件
+
+``` ini
+# 多个配置文件集合
+# include .\path\to\local.conf
+# include c:\path\to\other.conf
+
+# ip设定
+# bind 192.168.1.100 10.0.0.1
+# bind 127.0.0.1
+
+# 端口
+# If port 0 is specified Redis will not listen on a TCP socket.
+port 6379
+
+# Windows下不支持守护进程和pid
+# On Windows, daemonize and pidfile are not supported.
+# However, you can run redis as a Windows service, and specify a logfile.
+# The logfile will contain the pid. 
+
+
+# 日志级别以及日志输出文件
+# Specify the server verbosity level.
+# This can be one of:
+# debug (a lot of information, useful for development/testing)
+# verbose (many rarely useful info, but not a mess like the debug level)
+# notice (moderately verbose, what you want in production probably)
+# warning (only very important / critical messages are logged)
+loglevel notice
+
+# Specify the log file name. Also 'stdout' can be used to force
+# Redis to log on the standard output. 
+logfile ""
+
+
+# 持久化操作规则 xx 秒内有 xx 此操作，那么就持久化出 rdb文件
+#   save <seconds> <changes>
+#
+#   Will save the DB if both the given number of seconds and the given
+#   number of write operations against the DB occurred.
+
+save 900 1
+save 300 10
+save 60 10000
+
+# 持久化出问题了之后，是否继续工作
+stop-writes-on-bgsave-error yes
+
+# Compress string objects using LZF when dump .rdb databases?
+rdbcompression yes
+
+# The working directory. rdb文件保存位置
+dir ./
+################################# REPLICATION ##################################
+# 主从复制
+
+################################## SECURITY ###################################
+# Require clients to issue AUTH <PASSWORD> before processing any other
+# 默认没有密码 可以设定密码 ：requirepass ${password} 
+# 登录用密令 author ${password}
+# requirepass foobared
+
+################################### LIMITS ####################################
+# 最大客户端
+# maxclients 10000
+
+
+# This flag may not be combined with any of the other flags that configure
+# AOF and RDB operations.是否持久化，联合持久化策略
+# persistence-available [(yes)|no]
+
+#最大内存
+# maxmemory <bytes>
+
+# 内存溢出后的策略：
+# volatile-lru,allkeys-lru,volatile-random,allkeys-random,volatile-ttl,noeviction
+# volatile-lru -> remove the key with an expire set using an LRU algorithm
+# allkeys-lru -> remove any key according to the LRU algorithm
+# volatile-random -> remove a random key with an expire set
+# allkeys-random -> remove a random key, any key
+# volatile-ttl -> remove the key with the nearest expire time (minor TTL)
+# noeviction -> don't expire at all, just return an error on write operations
+
+# maxmemory-policy noeviction 这个是直接拒绝
+
+############################## APPEND ONLY MODE ###############################
+# AOF 持久化配置
+# 会持久化为 aof 文件
+# 追加方式持久化
+# 默认不起
+appendonly no
+
+# aof持久化策略
+# The fsync() call tells the Operating System to actually write data on disk
+# appendfsync always 每次都持久化
+appendfsync everysec # 每秒钟一次
+# appendfsync no     #不持久化
+
+
+```
+
+
+
+
+
+
+
+
 
 ## MAVEN
 
