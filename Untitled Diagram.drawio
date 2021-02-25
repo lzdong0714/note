@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-25T01:33:35.102Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="QdXFU3E7BROIP0AcFilK" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-02-25T01:35:00.176Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="XRH5VY0sqaUFbPpy50m3" version="14.4.3" type="github" pages="3">
   <diagram id="Ko7BzfuPDwPHrhIKAzi-" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -555,6 +555,936 @@
         </mxCell>
         <mxCell id="f9Q4ZX0UJmkfABaI8b5P-135" value="功能配置集合" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#009900;" vertex="1" parent="f9Q4ZX0UJmkfABaI8b5P-1">
           <mxGeometry x="-317" y="5570.75" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LSgN664teOeAjlXJ9bxS" name="Page-3">
+    <mxGraphModel dx="2844" dy="1588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-0" />
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-1" parent="I_VAvWlAeQiGw3FCsm6y-0" />
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-2" value="t_his_ipd_reg_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1241" y="110" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-3" value="住院登记表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-4" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-5" value="patient_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-6" value="bed_num" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-7" value="inpatient_code（住院号）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-8" value="inpatient_code_name" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-9" value="t_his_ipd_bed_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1830" y="40" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-10" value="床位信息表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-9">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-11" value="bed_number" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-9">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-12" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-9">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-13" value="t_his_ipd_pati_bed_ref" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1670" y="40" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-14" value="患者床位关联信息表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-13">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-15" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-13">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-16" value="bed_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-13">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-17" value="inpat_num" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-13">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-18" value="t_his_reg_basic_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="10" y="350" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-19" value="患者基本信息表(收集所有病人信息)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-18">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-20" value="id   外部引用：patient_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-18">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-21" value="health_card_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-18">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-22" value="live_address" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-18">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-23" value="id_card_num" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-18">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-24" value="tel_num" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-18">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-25" value="t_his_reg_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="20" y="650" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-26" value="患者挂号信息表（预约排班）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-25">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-27" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-25">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-28" value="outpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-25">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-29" value="patient_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-25">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-30" value="t_his_charge_outpre_detail" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1230" y="710" width="190" height="236" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-31" value="处方收费详情表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="26" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-32" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="56" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-33" value="patient_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="86" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-34" value="charge_id  收费流水号 " style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="116" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-35" value="outpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="146" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-36" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="176" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-37" value="social_insurance_fee  医保接口--处方项目传送返回的费用小计" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-30">
+          <mxGeometry y="206" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-38" value="t_his_outpat_patientis" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="320" y="263" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-39" value="patient_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-38">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-40" value="outpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-38">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-41" value="receive_treat_time" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-38">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-42" value="t_his_outpat_outpres" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="540" y="280" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-43" value="outpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-42">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-44" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-42">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-45" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-42">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-47" target="I_VAvWlAeQiGw3FCsm6y-254">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="1110" />
+              <mxPoint x="777" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-47" value="t_his_opd_charge" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="910" y="770" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-48" value="收费表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-47">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-49" value="charge_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-47">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-50" value="social_insurance_pay" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-47">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-51" value="settle_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-47">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-52" value="t_his_outpre_medici" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="520" y="440" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-53" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-52">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-54" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-52">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-55" value="drug_sku_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-52">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-56" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-52">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-57" value="t_his_outpre_medici_cn" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="680" y="440" width="160" height="322" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-58" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-57">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-59" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-57">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-60" value="drug_sku_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-57">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-61" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-57">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-62" value="t_his_outpre_project" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-57">
+          <mxGeometry y="146" width="160" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-63" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-62">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-64" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-62">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-65" value="project_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-62">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-66" value="group_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-62">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-67" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-62">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-68" value="t_his_outpre_consume" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="520" y="586" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-69" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-68">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-70" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-68">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-71" value="drug_sku_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-68">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-72" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-68">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-73" value="t_his_outpre_infos" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1245" y="404" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-74" value="门诊收费信息中间表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-73">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-75" value="outpre_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-73">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-76" value="outpre_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-73">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-147" target="I_VAvWlAeQiGw3FCsm6y-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-20" target="I_VAvWlAeQiGw3FCsm6y-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-40" target="I_VAvWlAeQiGw3FCsm6y-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-44" target="I_VAvWlAeQiGw3FCsm6y-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-144" target="I_VAvWlAeQiGw3FCsm6y-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-82" value="t_his_ipd_medici" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1610" y="280" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-83" value="医嘱西药" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-82">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-84" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-82">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-85" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-82">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-86" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-82">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-87" value="send_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-82">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-88" value="charge_type" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-82">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-89" value="t_his_ipd_project" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1770" y="280" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-90" value="医嘱项目表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-89">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-91" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-89">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-92" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-89">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-93" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-89">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-94" value="send_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-89">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-95" value="charge_type" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-89">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-96" value="t_his_ipd_medici_cn" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1930" y="280" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-97" value="医嘱中药表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-96">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-98" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-96">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-99" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-96">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-100" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-96">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-101" value="send_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-96">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-102" value="charge_type" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-96">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-103" value="t_his_ipd_advice" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1770" y="486" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-104" value="医嘱嘱托表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-103">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-105" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-103">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-106" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-103">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-107" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-103">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-108" value="send_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-103">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-109" value="charge_type" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-103">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-110" value="t_his_ipd_consume" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1610" y="486" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-111" value="医嘱材料表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-110">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-112" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-110">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-113" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-110">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-114" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-110">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-115" value="send_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-110">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-116" value="charge_type" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-110">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-117" value="t_his_ipd_outhis" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1930" y="486" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-118" value="出院医嘱表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-117">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-119" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-117">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-120" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-117">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-121" value="total_cost" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-117">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-122" value="send_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-117">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-123" value="charge_type" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-117">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-124" value="t_his_ipd_pre_money" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2620" y="565" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-125" value="住院预缴金信息" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-124">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-126" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-124">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-127" value="pre_money" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-124">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-128" value="settle_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-124">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-129" value="t_his_charge_settle_account" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2110" y="860" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-130" value="收费日结表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-129">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-131" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-129">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-132" value="settle_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-129">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-133" value="settle_type （1 门诊 2 住院）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-129">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-134" value="t_his_charge_settle_total" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1810" y="820" width="240" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-135" value="收费日结统计表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-134">
+          <mxGeometry y="26" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-136" value="id(settle_id)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-134">
+          <mxGeometry y="56" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-137" value="settle_type(日结类型(1:门诊结算，2：住院预交款，3：住院结算))" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-134">
+          <mxGeometry y="86" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-138" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-134">
+          <mxGeometry y="116" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-136" target="I_VAvWlAeQiGw3FCsm6y-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1690" y="891" />
+              <mxPoint x="1690" y="990" />
+              <mxPoint x="860" y="990" />
+              <mxPoint x="860" y="901" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-136" target="I_VAvWlAeQiGw3FCsm6y-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-144" target="I_VAvWlAeQiGw3FCsm6y-199">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="660" />
+              <mxPoint x="1100" y="1159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-144" target="I_VAvWlAeQiGw3FCsm6y-223">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-144" target="I_VAvWlAeQiGw3FCsm6y-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-144" value="收费" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1130" y="610" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-76" target="I_VAvWlAeQiGw3FCsm6y-144">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1139.9999999999995" y="521.0588235294122" as="sourcePoint" />
+            <mxPoint x="1229.9999999999995" y="901.0588235294122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-147" target="I_VAvWlAeQiGw3FCsm6y-194">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="492" />
+              <mxPoint x="380" y="946" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-147" value="挂号" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="220" y="442" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-28" target="I_VAvWlAeQiGw3FCsm6y-147">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="741.0588235294122" as="sourcePoint" />
+            <mxPoint x="310" y="365.0588235294117" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-150" target="I_VAvWlAeQiGw3FCsm6y-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-150" value="发送" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="970" y="386" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-58" target="I_VAvWlAeQiGw3FCsm6y-150">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840.0000000000005" y="481.05882352941217" as="sourcePoint" />
+            <mxPoint x="1219.9999999999995" y="441" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-152" value="t_his_ipd_charge_outpre" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2270" y="449" width="160" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-153" value="住院收费处方表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-152">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-154" value="charge_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-152">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-155" value="inpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-152">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-156" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-152">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-157" value="total_fee" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-152">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-158" value="t_his_ipd_charge_retreat" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2620" y="449" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-159" value="住院退费表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-158">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-160" value="charge_detail_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-158">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-161" value="retreat_money" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-158">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-163" target="I_VAvWlAeQiGw3FCsm6y-187">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-163" value="t_his_ipd_charge_detail" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2430" y="449" width="190" height="266" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-164" value="处方收费详情表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="26" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-165" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="56" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-166" value="outpre_type 处方类型" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="86" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-167" value="charge_id  收费流水号 " style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="116" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-168" value="pay_state" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="146" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-169" value="inpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="176" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-170" value="order_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="206" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-171" value="social_insurance_fee  医保接口--处方项目传送返回的费用小计" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry y="236" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-173" target="I_VAvWlAeQiGw3FCsm6y-163">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-173" value="护士执行" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2220" y="271" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-97" target="I_VAvWlAeQiGw3FCsm6y-173">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2090" y="321.05882352941217" as="sourcePoint" />
+            <mxPoint x="2420.0588235294117" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-175" value="t_his_bill_xxx(票据相关)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="550" y="876" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-176" value="Item 1" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-175">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-177" value="charge_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-175">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-178" value="Item 2" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-175">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-179" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-175">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-177" target="I_VAvWlAeQiGw3FCsm6y-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-181" value="t_his_insurance_return_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2590" y="1086" width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-182" value="医保接口返回信息表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-181">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-183" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-181">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-184" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-181">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-185" value="social_secu_record_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-181">
+          <mxGeometry y="116" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-187" target="I_VAvWlAeQiGw3FCsm6y-215">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-187" value="住院管理-&amp;gt;&lt;br&gt;出院结算-&amp;gt;&lt;br&gt;医保结算" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2475" y="906" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-188" value="t_his_insurance_opd_XXX" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1470" y="1090" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-189" value="门诊XXX费用发票打印返回信息表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-188">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-190" value="social_secu_card_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-188">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-191" value="settle_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-188">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-192" value="social_secu_record_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-188">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-194" target="I_VAvWlAeQiGw3FCsm6y-203">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-194" value="t_his_insurance_opd_reg" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="280" y="1040" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-195" value="门诊医保登记表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-194">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-196" value="outpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-194">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-197" value="Item 2" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-194">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-198" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-194">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-199" value="t_his_insurance_outpat_return_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1160" y="1086" width="160" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-200" value="门诊医保接口返回信息表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-199">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-201" value="outpat_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-199">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-202" value="charge_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-199">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-203" value="social_secu_record_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-199">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-203" target="I_VAvWlAeQiGw3FCsm6y-190">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-205" value="t_his_charge_social_secu_settle" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1790" y="1104" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-206" value="医保结算记录表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-205">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-207" value="charge_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-205">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-208" value="social_secu_record_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-205">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-192" target="I_VAvWlAeQiGw3FCsm6y-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-210" value="t_his_insurance_ipd_settle" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="3100" y="1104" width="160" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-211" value="住院医保结算统计表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-210">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-212" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-210">
+          <mxGeometry y="52" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-213" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-210">
+          <mxGeometry y="82" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-215" target="I_VAvWlAeQiGw3FCsm6y-242">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-215" value="t_his_insurance_ipd_XX" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2810" y="1086" width="160" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-216" value="XXX住院费用发票打印返回信息表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-215">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-217" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-215">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-218" value="inpat_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-215">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-219" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-215">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-220" value="social_secu_record_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-215">
+          <mxGeometry y="146" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-184" target="I_VAvWlAeQiGw3FCsm6y-218">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-218" target="I_VAvWlAeQiGw3FCsm6y-212">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-223" value="t_his_charge_outpre" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1460" y="740" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-224" value="收费处方表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-223">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-225" value="charge_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-223">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-226" value="outpre_code" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-223">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-227" value="t_his_ipd_fee_total" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2780" y="449" width="140" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-228" value="统计患者总金额表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-227">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-229" value="inpatient_code" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-227">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-230" value="pre_money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-227">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-231" value="total_money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-227">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-232" value="money_to_settle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-227">
+          <mxGeometry y="130" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-233" value="t_his_ipd_pre_money" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2920" y="449" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-234" value="住院预缴金信息" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-233">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-235" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-233">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-236" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-233">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-237" value="pre_money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-233">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-238" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-240" target="I_VAvWlAeQiGw3FCsm6y-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-240" target="I_VAvWlAeQiGw3FCsm6y-288">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-240" value="住院登记" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1030" y="206" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-242" target="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-242" value="结算" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2840" y="1376" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-243" value="t_his_yf_send_drug_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="505" y="1370" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-244" value="发药记录表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-243">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-245" value="send_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-243">
+          <mxGeometry y="52" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-246" value="outpre_code" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-243">
+          <mxGeometry y="78" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-247" value="repo_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-243">
+          <mxGeometry y="104" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-248" value="t_his_yf_back_drug_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="510" y="1560" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-249" value="退药记录表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-248">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-250" value="back_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-248">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-251" value="outpre_code" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-248">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-252" value="repo_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-248">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-254" target="I_VAvWlAeQiGw3FCsm6y-243">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-254" value="发药" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="727" y="1270" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-7" target="I_VAvWlAeQiGw3FCsm6y-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-256" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-257" target="I_VAvWlAeQiGw3FCsm6y-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-257" value="医嘱管理" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="1460" y="316" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-258" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.082;entryY=0.556;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-7" target="I_VAvWlAeQiGw3FCsm6y-257">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="271" />
+              <mxPoint x="1420" y="396" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-259" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-7" target="I_VAvWlAeQiGw3FCsm6y-261">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2260" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2020" y="270" />
+              <mxPoint x="2020" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-261" target="I_VAvWlAeQiGw3FCsm6y-265">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-261" value="电子病历" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2230" y="120" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-262" value="t_sys_dic_emr_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2540" y="79" width="140" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-263" value="病历文书表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-264" value="clinic_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-265" value="inpat_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-266" value="moniker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-267" value="temp_id （病历模板id）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="130" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-268" value="content （解析用的html）" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="156" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-269" value="content_header" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="182" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-270" value="content_footer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-262">
+          <mxGeometry y="208" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-271" value="t_sys_dic_template_emr_type" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2980" y="275" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-272" value="病历分类" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-271">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-273" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-271">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-274" value="moniker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-271">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-275" value="t_sys_dic_template_emr_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2780" y="206" width="140" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-276" value="id 病历模板表（实施建立）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-275">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-277" value="clinic_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-275">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-278" value="moniker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-275">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-279" value="type_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-275">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-280" value="is_enable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-275">
+          <mxGeometry y="130" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-281" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-279" target="I_VAvWlAeQiGw3FCsm6y-273">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I_VAvWlAeQiGw3FCsm6y-1" source="I_VAvWlAeQiGw3FCsm6y-267" target="I_VAvWlAeQiGw3FCsm6y-276">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-283" value="t_sys_dic_template_emr_custom_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2800" y="20" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-284" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-283">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-285" value="clinic_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-283">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-286" value="inpat_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-283">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-287" value="t_his_ipd_discharge_settle" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-1">
+          <mxGeometry x="2430" y="1332" width="160" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-288" value="出院结算表" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-289" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-290" value="inpatient_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-291" value="total_money" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry y="116" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-292" value="medical_insurance_money" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I_VAvWlAeQiGw3FCsm6y-293" value="total_pre_money" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="I_VAvWlAeQiGw3FCsm6y-287">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
