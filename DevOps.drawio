@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-13T01:46:45.440Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="yYTg8MWkiptWnqQKmBRS" version="15.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-13T02:11:30.847Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="Dd5lNwtoA-UrUG_z6DXD" version="15.2.7" type="github" pages="2">
   <diagram id="kvhHsFNAe7Wy4NFVPUG2" name="第 1 页">
-    <mxGraphModel dx="782" dy="446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1117" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,6 +95,53 @@
               <mxPoint x="808.01" y="780" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wWLvoQ0vdSxyw2ib5izv" name="k8s部署流程">
+    <mxGraphModel dx="782" dy="446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-0" />
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-1" parent="EwMxIJcuXC9kMLZ3rrXE-0" />
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-2" value="manage-app&lt;br&gt;管理后台" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="204" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="EwMxIJcuXC9kMLZ3rrXE-1" source="EwMxIJcuXC9kMLZ3rrXE-4" target="EwMxIJcuXC9kMLZ3rrXE-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-4" value="platform&lt;br&gt;培训机器人，基本就是调用" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="464" y="330" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-5" value="file: 8044&lt;br&gt;文件管理" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="64" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-6" value="uap-&lt;br&gt;统一认证" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="194" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-7" value="complie" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="334" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-8" value="publish" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="334" y="210" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-9" value="api&lt;br&gt;应该是主界面功能服务程序: 8066" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="464" y="180" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-10" value="服务依赖" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="524" y="270" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-11" value="ai_train_h5" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="84" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-12" value="aitrs_h5_integrations" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="214" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-13" value="trs_admin_micro_courseware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="514" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EwMxIJcuXC9kMLZ3rrXE-14" value="aitrs_admin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EwMxIJcuXC9kMLZ3rrXE-1">
+          <mxGeometry x="644" y="460" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
